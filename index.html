@@ -11,63 +11,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&amp;family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
   </head>
   <body> 
-    <header class="header">
-      <div class="header-container"><a href="/"><img src="img/logo.svg" alt="Logo"></a>
-        <ul>
-          <li>首頁</li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
+    <header class="navbar justify-content-center border-bottom border-light">
+      <h1 class="navbar-logo position-absolute"><a href="#"><img src="img/logo.svg" alt="logo"></a></h1>
+      <nav>
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item"> <a href="#">首頁</a><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span></li>
+          <li class="nav-item">作品集<a href="#">首頁</a><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span></li>
+          <li class="nav-item">服務項目<a href="#">首頁</a><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span></li>
+          <li class="nav-item">部落格<a href="#">首頁</a><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span></li>
+          <li class="nav-item">關於我<a href="#">首頁</a><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span></li>
         </ul>
-      </div>
+      </nav>
     </header>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <ul class="card-list">
-            <li class="card"><a href="#"><img src="img/work/work-img1.png" alt="星際旅行訂票平台">
-                <div class="card-text"><a href="#">
-                    <h3>星際旅行訂票平台</h3>
-                    <p>悠遊宇宙的夢想，從這裡開始實現</p></a>
-                  <ul class="card-tags">
-                    <li class="list-unstyled"><a href="#">網頁設計</a></li>
-                    <li class="list-unstyled"><a href="#">響應式設計</a></li>
-                    <li class="list-unstyled"><a href="#">Bootstrap</a></li>
-                  </ul>
-                </div></a></li>
-            <li class="card"><a href="#"><img src="img/work/work-img2.png" alt="理財App">
-                <div class="card-text"><a href="#">
-                    <h3>理財App</h3>
-                    <p>連動帳戶與行動支付，讓AI提供您最好的理財選擇</p></a>
-                  <ul class="card-tags">
-                    <li class="list-unstyled"><a href="#">APP設計</a></li>
-                    <li class="list-unstyled"><a href="#">iOS</a></li>
-                    <li class="list-unstyled"><a href="#">React</a></li>
-                  </ul>
-                </div></a></li>
-            <li class="card"><a href="#"><img src="img/work/work-img3.png" alt="醫美診所官網">
-                <div class="card-text"><a href="#">
-                    <h3>醫美診所官網</h3>
-                    <p>永保青春的秘密，從粹究開始</p></a>
-                  <ul class="card-tags">
-                    <li class="list-unstyled"><a href="#">網頁設計</a></li>
-                    <li class="list-unstyled"><a href="#">響應式設計</a></li>
-                    <li class="list-unstyled"><a href="#">WordPress</a></li>
-                  </ul>
-                </div></a></li>
-            <li class="card"><a href="#"><img src="img/work/work-img4.png" alt="美美美早餐店POS機UI Design">
-                <div class="card-text"><a href="#">
-                    <h3>美美美早餐店POS機UI Design</h3>
-                    <p>訂單送單一目瞭然，自動報表分析好輕鬆</p></a>
-                  <ul class="card-tags">
-                    <li class="list-unstyled"><a href="#">UI設計</a></li>
-                    <li class="list-unstyled"><a href="#">前端開發</a></li>
-                    <li class="list-unstyled"><a href="#">Wix</a></li>
-                  </ul>
-                </div></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <main class="slogan">
+      <p>讓使用者在觀賞與使用的旅程中，發現設計的價值標題裝飾而我在設計與開發的過程中，看見自己的價值</p>
+    </main>
+    <section class="container pt-1">
+      <ul class="card-list d-flex flex-wrap">
+        <li class="card list-unstyled border-0 card-radius"><img class="card-img-top card-radius" src="img/work/work-img1.png" alt="星際旅行訂票平台">
+          <div class="card-body">
+            <h3 class="card-title">星際旅行訂票平台</h3>
+            <p class="card-text">悠遊宇宙的夢想，從這裡開始實現</p>
+            <ul class="card-tags">
+              <li class="list-unstyled"> <a href="#">網頁設計</a></li>
+              <li class="list-unstyled"><a href="#">響應式設計</a></li>
+              <li class="list-unstyled"><a href="#">Bootstrap</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="card list-unstyled border-0 card-radius"><img class="card-img-top card-radius" src="img/work/work-img2.png" alt="理財App">
+          <div class="card-body">
+            <h3 class="card-title">理財App</h3>
+            <p class="card-text">連動帳戶與行動支付，讓AI提供您最好的理財選擇</p>
+            <ul class="card-tags">
+              <li class="list-unstyled"><a href="#">APP設計</a></li>
+              <li class="list-unstyled"><a href="#">iOS</a></li>
+              <li class="list-unstyled"><a href="#">React</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="card list-unstyled border-0 card-radius"><img class="card-img-top card-radius" src="img/work/work-img3.png" alt="醫美診所官網">
+          <div class="card-body">
+            <h3 class="card-title">醫美診所官網</h3>
+            <p class="card-text">永保青春的秘密，從粹究開始</p>
+            <ul class="card-tags">
+              <li class="list-unstyled"><a href="#">網頁設計</a></li>
+              <li class="list-unstyled"><a href="#">響應式設計</a></li>
+              <li class="list-unstyled"><a href="#">WordPress</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="card list-unstyled border-0 card-radius"><img class="card-img-top card-radius" src="img/work/work-img4.png" alt="美美美早餐店POS機UI Design">
+          <div class="card-body">
+            <h3 class="card-title">美美美早餐店POS機UI Design</h3>
+            <p class="card-text">訂單送單一目瞭然，自動報表分析好輕鬆</p>
+            <ul class="card-tags">
+              <li class="list-unstyled"><a href="#">UI設計</a></li>
+              <li class="list-unstyled"><a href="#">前端開發</a></li>
+              <li class="list-unstyled"><a href="#">Wix</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
   </body>
 </html>

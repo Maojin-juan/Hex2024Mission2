@@ -1,52 +1,50 @@
 $main-color: #3b3b3b;
 $second-color: #f1f1f1;
-
-*,*:before,*:after{
-  box-sizing: border-box;
+.card-radius{
+  border-radius: 8px;
 }
-  
+
+//---------------------定義分隔線-----------------------------
+
 body{
   font-family: "Noto Sans TC","Noto Sans", sans-serif;
-  line-height: 1.5;;
+  line-height: 1.5;
 }
-  
+a{
+  text-decoration: none;
+}
+
+
+.navbar{
+  padding: 28px 0;
+  &-logo{
+    left: -1px;
+  } 
+  &-nav{
+    gap: 40px;
+  }
+}
+
 .container{
   max-width: 1320px;
-  padding-top: 12px;
-  margin: 0 auto;
+  // padding-top: 12px;
 }
-  
-.card-list{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-  
+
 .card{
   padding: 0 12px 80px;
   width: calc(50% - 12px);
-  border-radius: 8px;
   transition-duration: 0.5s;
-    &:hover{
-      width: 50.1%;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      cursor: pointer;
-    }
-    img{
-      width: 100%;
-      display: block;
-      margin-top: 12px;
-      border-radius: 8px;
-      border: 1px solid $second-color;
-    }
-}
-      
-.card-text{
-  padding: 5px 5px 0 5px;
-    a{
-      text-decoration: none;
-    }
-    
+
+  img{
+    width: 100%;
+    display: block;
+    margin-top: 12px;
+    border: 1px solid $second-color;
+  }
+
+  .card-body{
+    padding: 5px 5px 0 5px;
+
     h3{
       color: $main-color;
       line-height: 1.2;
@@ -54,31 +52,37 @@ body{
       font-size: 28px;
       font-weight: bold;
     }
-      
     p{
       color: #919191;
       margin-bottom: 20px;
     }
-      
     ul{
       display: flex;
       flex-wrap: wrap;
+      padding: 0;
     }
-}
-    
-.card-tags{
-  li{
-    margin-right: 16px;
   }
-    
-  a{
-    padding: 5px 10px;
-    border-radius: 20px;
-    background: $second-color;
-    color: $main-color;
+
+  &-tags{
+    li{
+      margin-right: 16px;
+    } 
+    a{
+      padding: 5px 10px;
+      border-radius: 20px;
+      background: $second-color;
+      color: $main-color;
+      &:hover{
+        background: $main-color;
+        color: $second-color;
+      }
+    }
   }
+
   &:hover{
-    background: $main-color;
-    color: $second-color;
+    width: 50.1%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
   }
 }
+

@@ -1,5 +1,5 @@
-*, *:before, *:after {
-  box-sizing: border-box;
+.card-radius {
+  border-radius: 8px;
 }
 
 body {
@@ -7,59 +7,54 @@ body {
   line-height: 1.5;
 }
 
-.container {
-  max-width: 1320px;
-  padding-top: 12px;
-  margin: 0 auto;
+a {
+  text-decoration: none;
 }
 
-.card-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.navbar {
+  padding: 28px 0;
+}
+.navbar-logo {
+  left: -1px;
+}
+.navbar-nav {
+  gap: 40px;
+}
+
+.container {
+  max-width: 1320px;
 }
 
 .card {
   padding: 0 12px 80px;
   width: calc(50% - 12px);
-  border-radius: 8px;
   transition-duration: 0.5s;
-}
-.card:hover {
-  width: 50.1%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  cursor: pointer;
 }
 .card img {
   width: 100%;
   display: block;
   margin-top: 12px;
-  border-radius: 8px;
   border: 1px solid #f1f1f1;
 }
-
-.card-text {
+.card .card-body {
   padding: 5px 5px 0 5px;
 }
-.card-text a {
-  text-decoration: none;
-}
-.card-text h3 {
+.card .card-body h3 {
   color: #3b3b3b;
   line-height: 1.2;
   margin-bottom: 15px;
   font-size: 28px;
   font-weight: bold;
 }
-.card-text p {
+.card .card-body p {
   color: #919191;
   margin-bottom: 20px;
 }
-.card-text ul {
+.card .card-body ul {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
 }
-
 .card-tags li {
   margin-right: 16px;
 }
@@ -69,7 +64,12 @@ body {
   background: #f1f1f1;
   color: #3b3b3b;
 }
-.card-tags:hover {
+.card-tags a:hover {
   background: #3b3b3b;
   color: #f1f1f1;
+}
+.card:hover {
+  width: 50.1%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
 }
