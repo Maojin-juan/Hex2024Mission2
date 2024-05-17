@@ -36,12 +36,9 @@ ul, ol {
   gap: 40px;
 }
 
-.card-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 .card img {
+  max-width: 100%;
+  height: auto;
   display: block;
   border: 1px solid #f1f1f1;
 }
