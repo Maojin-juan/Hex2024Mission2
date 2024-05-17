@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 .card-radius {
   border-radius: 8px;
 }
@@ -19,7 +20,7 @@ a {
   text-decoration: none;
 }
 
-ul, ol, li {
+ul, ol {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -35,12 +36,12 @@ ul, ol, li {
   gap: 40px;
 }
 
-.card {
-  padding-bottom: 80px;
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .card img {
-  max-width: 100%;
-  height: auto;
   display: block;
   border: 1px solid #f1f1f1;
 }
@@ -72,7 +73,6 @@ ul, ol, li {
   color: #f1f1f1;
 }
 .card:hover {
-  width: 50.1%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   cursor: pointer;
 }

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 $main-color: #3b3b3b;
 $second-color: #f1f1f1;
 
@@ -20,7 +22,7 @@ body{
 a{
   text-decoration: none;
 }
-ul, ol, li{
+ul, ol{
   padding: 0;
   margin: 0;
   list-style: none;
@@ -37,11 +39,15 @@ ul, ol, li{
 }
 
 .card{
-  padding-bottom: 80px;
-
+  &-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
   img{
-    max-width: 100%;
-    height: auto;
+    // max-width: 100%;
+    // height: auto;
     display: block;
     border: 1px solid $second-color;
   }
@@ -78,7 +84,6 @@ ul, ol, li{
   }
 
   &:hover{
-    width: 50.1%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
   }
