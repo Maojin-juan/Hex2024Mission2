@@ -1,7 +1,14 @@
 $main-color: #3b3b3b;
 $second-color: #f1f1f1;
+
 .card-radius{
   border-radius: 8px;
+}
+.p0-12{
+  padding: 0 12px;
+}
+.m-0-a{
+  margin: 0 auto;
 }
 
 //---------------------定義分隔線-----------------------------
@@ -13,7 +20,11 @@ body{
 a{
   text-decoration: none;
 }
-
+ul, ol, li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
 .navbar{
   padding: 28px 0;
@@ -25,23 +36,15 @@ a{
   }
 }
 
-.container{
-  max-width: 1320px;
-  // padding-top: 12px;
-}
-
 .card{
-  padding: 0 12px 80px;
-  width: calc(50% - 12px);
-  transition-duration: 0.5s;
+  padding-bottom: 80px;
 
   img{
-    width: 100%;
+    max-width: 100%;
+    height: auto;
     display: block;
-    margin-top: 12px;
     border: 1px solid $second-color;
   }
-
   .card-body{
     padding: 5px 5px 0 5px;
 
@@ -55,11 +58,6 @@ a{
     p{
       color: #919191;
       margin-bottom: 20px;
-    }
-    ul{
-      display: flex;
-      flex-wrap: wrap;
-      padding: 0;
     }
   }
 

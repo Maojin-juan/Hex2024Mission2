@@ -2,6 +2,14 @@
   border-radius: 8px;
 }
 
+.p0-12 {
+  padding: 0 12px;
+}
+
+.m-0-a {
+  margin: 0 auto;
+}
+
 body {
   font-family: "Noto Sans TC", "Noto Sans", sans-serif;
   line-height: 1.5;
@@ -9,6 +17,12 @@ body {
 
 a {
   text-decoration: none;
+}
+
+ul, ol, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .navbar {
@@ -21,19 +35,13 @@ a {
   gap: 40px;
 }
 
-.container {
-  max-width: 1320px;
-}
-
 .card {
-  padding: 0 12px 80px;
-  width: calc(50% - 12px);
-  transition-duration: 0.5s;
+  padding-bottom: 80px;
 }
 .card img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   display: block;
-  margin-top: 12px;
   border: 1px solid #f1f1f1;
 }
 .card .card-body {
@@ -49,11 +57,6 @@ a {
 .card .card-body p {
   color: #919191;
   margin-bottom: 20px;
-}
-.card .card-body ul {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
 }
 .card-tags li {
   margin-right: 16px;
