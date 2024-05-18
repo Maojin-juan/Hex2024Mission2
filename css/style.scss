@@ -7,13 +7,28 @@ $second-color: #f1f1f1;
   border-radius: 8px;
 }
 
-//---------------------定義分隔線-----------------------------
+//-----------------------------定義分隔線-----------------------------
+
+@media (max-width: 576px) {
+  .exp-list{
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 32.5px;
+  }
+}
+
+//-------------------------------RWD-------------------------------
+// *{
+//   outline: 1px solid black;
+// }
 
 body{
   font-family: "Noto Sans TC","Noto Sans", sans-serif;
   line-height: 1.5;
 }
+
 a{
+  color: #000;
   text-decoration: none;
 }
 ul, ol{
@@ -21,21 +36,56 @@ ul, ol{
   margin: 0;
   list-style: none;
 }
+
 .navbar{
-  padding: 28px 0;
+  padding: 32px 0;
+
   &-logo{
-    left: -1px;
+    left: 7.8%;
   } 
   &-nav{
     gap: 40px;
   }
 }
 
+section{
+  background: #fafafa;
+}
+
 .slogan{
   padding: 80px 0;
 }
 
+.exp-list{
+  display: flex;
+  color: $main-color;
+  max-width: 100%;
+  padding-bottom: 80px;
+  gap: 40px;
+
+  h6::before{
+    content: "";
+    border-bottom: 2px solid #C1C1C1;
+    z-index: 2;
+    top: 25px;
+    left: 47%;
+    width: 24px;
+    position: absolute;
+  }
+  p{
+    margin: 0;
+  }
+}
+
+.exp{
+  position: relative;
+  gap: 8px;
+  width: 300px;
+}
+
 main{
+  margin-top: 120px;
+
   .container{
     padding: 0 12px;
     margin: 0 auto;
@@ -44,6 +94,7 @@ main{
 
 .card{
   transition-duration: 0.5s;
+
   &:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
@@ -54,35 +105,38 @@ main{
     display: block;
     border: 1px solid $second-color;
   }
-  .card-body{
-    padding: 5px 5px 0 5px;
-    h3{
-      color: $main-color;
-      line-height: 1.2;
-      margin-bottom: 15px;
-      font-size: 28px;
-      font-weight: bold;
-    }
-    p{
-      color: #919191;
-      margin-bottom: 20px;
-    }
-  }
   &-tags{
+    gap: 16px;
     li{
-      margin-right: 16px;
+      // margin-right: 16px;
+      text-wrap: nowrap;
     } 
     a{
-      padding: 5px 10px;
       border-radius: 20px;
-      background: $second-color;
+      padding: 5px 10px;
       color: $main-color;
+      background: $second-color;
       transition-duration: 0.5s;
       &:hover{
-        background: $main-color;
         color: $second-color;
+        background: $main-color;
       }
     }
+  }
+}
+
+.card-body{
+  padding: 10px 10px 0 10px;
+  h3{
+    color: $main-color;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  p{
+    color: #919191;
+    margin-bottom: 20px;
   }
 }
 

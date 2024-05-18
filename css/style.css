@@ -3,12 +3,20 @@
   border-radius: 8px;
 }
 
+@media (max-width: 576px) {
+  .exp-list {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 32.5px;
+  }
+}
 body {
   font-family: "Noto Sans TC", "Noto Sans", sans-serif;
   line-height: 1.5;
 }
 
 a {
+  color: #000;
   text-decoration: none;
 }
 
@@ -19,19 +27,52 @@ ul, ol {
 }
 
 .navbar {
-  padding: 28px 0;
+  padding: 32px 0;
 }
 .navbar-logo {
-  left: -1px;
+  left: 7.8%;
 }
 .navbar-nav {
   gap: 40px;
+}
+
+section {
+  background: #fafafa;
 }
 
 .slogan {
   padding: 80px 0;
 }
 
+.exp-list {
+  display: flex;
+  color: #3b3b3b;
+  max-width: 100%;
+  padding-bottom: 80px;
+  gap: 40px;
+}
+.exp-list h6::before {
+  content: "";
+  border-bottom: 2px solid #C1C1C1;
+  z-index: 2;
+  top: 25px;
+  left: 47%;
+  width: 24px;
+  position: absolute;
+}
+.exp-list p {
+  margin: 0;
+}
+
+.exp {
+  position: relative;
+  gap: 8px;
+  width: 300px;
+}
+
+main {
+  margin-top: 120px;
+}
 main .container {
   padding: 0 12px;
   margin: 0 auto;
@@ -50,31 +91,35 @@ main .container {
   display: block;
   border: 1px solid #f1f1f1;
 }
-.card .card-body {
-  padding: 5px 5px 0 5px;
+.card-tags {
+  gap: 16px;
 }
-.card .card-body h3 {
+.card-tags li {
+  text-wrap: nowrap;
+}
+.card-tags a {
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: #3b3b3b;
+  background: #f1f1f1;
+  transition-duration: 0.5s;
+}
+.card-tags a:hover {
+  color: #f1f1f1;
+  background: #3b3b3b;
+}
+
+.card-body {
+  padding: 10px 10px 0 10px;
+}
+.card-body h3 {
   color: #3b3b3b;
   line-height: 1.2;
   margin-bottom: 15px;
   font-size: 28px;
   font-weight: bold;
 }
-.card .card-body p {
+.card-body p {
   color: #919191;
   margin-bottom: 20px;
-}
-.card-tags li {
-  margin-right: 16px;
-}
-.card-tags a {
-  padding: 5px 10px;
-  border-radius: 20px;
-  background: #f1f1f1;
-  color: #3b3b3b;
-  transition-duration: 0.5s;
-}
-.card-tags a:hover {
-  background: #3b3b3b;
-  color: #f1f1f1;
 }

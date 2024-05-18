@@ -13,7 +13,7 @@ html(lang="en")
 		//- link(href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet")
 
 	body 
-		header.navbar.justify-content-center.border-bottom.border-light
+		header.navbar.justify-content-center
 			h1.navbar-logo.position-absolute
 				a(href="#")
 					img(src="img/logo.svg", alt="logo") 
@@ -50,19 +50,26 @@ html(lang="en")
 						span.item-frame(style="opacity: 1;")
 						span.item-frame(style="opacity: 1;")
 
-		section.container.d-flex.justify-content-center
+		section.d-flex.flex-column.align-items-center.text-center
 			.slogan
-				p.fs-4.mb-4.text-center 讓使用者在觀賞與使用的旅程中，發現設計的價值
-				p.fs-4.mb-4.text-center 標題裝飾而我在設計與開發的過程中，看見自己的價值
+				p.fs-4.mb-4 讓使用者在觀賞與使用的旅程中，發現設計的價值
+				p.fs-4.mb-4 標題裝飾而我在設計與開發的過程中，看見自己的價值
+			.exp-list
+				.exp.d-flex.flex-column.align-items-center
+					h6 2B經驗
+					p 內部監控系統、庫存系統、採購系統、行銷整合系統
+				.exp.d-flex.flex-column.align-items-center
+					h6 2C經驗
+					p 跨國美妝保養電商、個人品牌網站、醫美網站、電子商務
 
 		main.container
-			ul.card-list.row.row-cols-lg-2.justify-content-between
+			ul.card-list.row.row-cols-lg-2
 				li.card.list-unstyled.border-0.card-radius.pb-5
-					img.card-img-top.mt-2.card-radius(src="img/work/work-img1.png", alt="星際旅行訂票平台")
+					img.card-img-top.mt-3.card-radius(src="img/work/work-img1.png", alt="星際旅行訂票平台")
 					.card-body
 						h3.card-title 星際旅行訂票平台
 						p.card-text 悠遊宇宙的夢想，從這裡開始實現
-						ul.card-tags.d-flex
+						ul.card-tags.d-flex.flex-wrap
 							li.list-unstyled 
 								a(href="#") 網頁設計
 							li.list-unstyled
@@ -71,11 +78,11 @@ html(lang="en")
 								a(href="#") Bootstrap
 								
 				li.card.list-unstyled.border-0.card-radius.pb-5
-					img.card-img-top.mt-2.card-radius(src="img/work/work-img2.png" alt="理財App")
+					img.card-img-top.mt-3.card-radius(src="img/work/work-img2.png" alt="理財App")
 					.card-body
 						h3.card-title 理財App
 						p.card-text 連動帳戶與行動支付，讓AI提供您最好的理財選擇
-						ul.card-tags.d-flex
+						ul.card-tags.d-flex.flex-wrap
 							li.list-unstyled
 								a(href="#") APP設計
 							li.list-unstyled
@@ -84,11 +91,11 @@ html(lang="en")
 								a(href="#") React
 									
 				li.card.list-unstyled.border-0.card-radius.pb-5
-					img.card-img-top.mt-2.card-radius(src="img/work/work-img3.png" alt="醫美診所官網")
+					img.card-img-top.mt-3.card-radius(src="img/work/work-img3.png" alt="醫美診所官網")
 					.card-body
 						h3.card-title 醫美診所官網
 						p.card-text 永保青春的秘密，從粹究開始
-						ul.card-tags.d-flex
+						ul.card-tags.d-flex.flex-wrap
 							li.list-unstyled
 								a(href="#") 網頁設計
 							li.list-unstyled
@@ -97,14 +104,40 @@ html(lang="en")
 								a(href="#") WordPress
 									
 				li.card.list-unstyled.border-0.card-radius.pb-5
-					img.card-img-top.mt-2.card-radius(src="img/work/work-img4.png", alt="美美美早餐店POS機UI Design")
+					img.card-img-top.mt-3.card-radius(src="img/work/work-img4.png", alt="美美美早餐店POS機UI Design")
 					.card-body
 						h3.card-title 美美美早餐店POS機UI Design
 						p.card-text 訂單送單一目瞭然，自動報表分析好輕鬆
-						ul.card-tags.d-flex
+						ul.card-tags.d-flex.flex-wrap
 							li.list-unstyled
 								a(href="#") UI設計
 							li.list-unstyled
 								a(href="#") 前端開發
 							li.list-unstyled
 								a(href="#") Wix
+
+				li.card.list-unstyled.border-0.card-radius.pb-5
+					img.card-img-top.mt-3.card-radius(src="img/work/work-img5.png", alt="電影院訂票系統")
+					.card-body
+						h3.card-title 電影院訂票系統
+						p.card-text 三步驟完成訂票，電腦手機都支援
+						ul.card-tags.d-flex.flex-wrap
+							li.list-unstyled
+								a(href="#") 前端開發
+							li.list-unstyled
+								a(href="#") 後端支援
+							li.list-unstyled
+								a(href="#") Vue
+
+				li.card.list-unstyled.border-0.card-radius.pb-5
+					img.card-img-top.mt-3.card-radius(src="img/work/work-img6.png", alt="巧克巧克形象官網設計")
+					.card-body
+						h3.card-title 巧克巧克形象官網設計
+						p.card-text 三步驟完成訂票，電腦手機都支援
+						ul.card-tags.d-flex.flex-wrap
+							li.list-unstyled
+								a(href="#") UI設計
+							li.list-unstyled
+								a(href="#") 設計系統
+							li.list-unstyled
+								a(href="#") 網路電商
