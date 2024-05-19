@@ -11,7 +11,7 @@ html(lang="en")
 		link(rel="preconnect" href="https://fonts.googleapis.com")
 		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
 
-	body 
+	body
 		header.navbar.justify-content-center
 			.navbar-elements
 				h1
@@ -51,12 +51,12 @@ html(lang="en")
 							span.item-frame(style="opacity: 1;")
 
 		section.slogan-banner.d-flex.flex-column.align-items-center.text-center
-			.slogan.position-relative
+			.slogan.flex-column.position-relative
 				img.slogan-quote-l(src="img/quote/quote-left.png", alt="qute-left")
-				p.fs-4.mb-4 讓使用者在觀賞與使用的旅程中，發現
+				p.fs-4 讓使用者在觀賞與使用的旅程中，發現
 					span.mark-line.position-relative 設計的價值
 						img.mark.position-absolute(src="img/mark.png", alt="mark")
-				p.fs-4.mb-4 標題裝飾而我在設計與開發的過程中，看見
+				p.fs-4 而我在設計與開發的過程中，看見
 					span.mark-line.position-relative 自己的價值
 						img.mark.position-absolute(src="img/mark.png", alt="mark")
 				img.slogan-quote-r(src="img/quote/quote-right.png", alt="qute-right")
@@ -148,11 +148,15 @@ html(lang="en")
 							li.list-unstyled
 								a(href="#") 網路電商
 
-			ul.pagination
+			ul.pagination.d-flex.justify-content-center
 				li
+					a.pagination-alink1.fs-4(href="#") 1
+				li
+					a.fs-4(href="#") 2
+				li
+					a.fs-4(href="#") 3
 
-				li
-				
-				li
-
-		footer.footer footer內容footer內容footer內容footer內容footer內容footer內容footer內容
+		footer.footer-lg
+			.contact
+				img(src="img/logo_svg/logo.svg", alt="logo")
+				p
