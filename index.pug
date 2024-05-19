@@ -10,50 +10,56 @@ html(lang="en")
 		link(rel="stylesheet", href="css/style.css")
 		link(rel="preconnect" href="https://fonts.googleapis.com")
 		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
-		//- link(href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet")
 
 	body 
 		header.navbar.justify-content-center
-			h1.navbar-logo.position-absolute
-				a(href="#")
-					img(src="img/logo.svg", alt="logo") 
-			nav
-				ul.navbar-nav.flex-row
-					li.nav-item 
-						a(href="#") 首頁
-						span.item-frame(style="opacity: 1;")
-						span.item-frame(style="opacity: 1;")
-						span.item-frame(style="opacity: 1;")
-						span.item-frame(style="opacity: 1;")
-					li.nav-item
-						a(href="#") 作品集
-						span.item-frame(style="opacity: 1;")
-						span.item-frame(style="opacity: 1;")
-						span.item-frame(style="opacity: 1;")
-						span.item-frame(style="opacity: 1;")
-					li.nav-item
-						a(href="#") 服務項目
-						span.item-frame(style="opacity: 1;")
-						span.item-frame(style="opacity: 1;")
-						span.item-frame(style="opacity: 1;")
-						span.item-frame(style="opacity: 1;")
-					li.nav-item 
-						a(href="#") 部落格
-						span.item-frame(style="opacity: 1;")
-						span.item-frame(style="opacity: 1;")
-						span.item-frame(style="opacity: 1;")
-						span.item-frame(style="opacity: 1;")
-					li.nav-item
-						a(href="#") 關於我
-						span.item-frame(style="opacity: 1;")
-						span.item-frame(style="opacity: 1;")
-						span.item-frame(style="opacity: 1;")
-						span.item-frame(style="opacity: 1;")
+			.navbar-elements
+				h1
+					a.navbar-link(href="#")
+						img.navbar-logo.position-absolute(src="img/logo_svg/logo.svg", alt="logo") 
+				nav
+					ul.navbar-nav.flex-row.justify-content-center
+						li.nav-item 
+							a(href="#") 首頁
+							span.item-frame(style="opacity: 1;")
+							span.item-frame(style="opacity: 1;")
+							span.item-frame(style="opacity: 1;")
+							span.item-frame(style="opacity: 1;")
+						li.nav-item
+							a(href="#") 作品集
+							span.item-frame(style="opacity: 1;")
+							span.item-frame(style="opacity: 1;")
+							span.item-frame(style="opacity: 1;")
+							span.item-frame(style="opacity: 1;")
+						li.nav-item
+							a(href="#") 服務項目
+							span.item-frame(style="opacity: 1;")
+							span.item-frame(style="opacity: 1;")
+							span.item-frame(style="opacity: 1;")
+							span.item-frame(style="opacity: 1;")
+						li.nav-item 
+							a(href="#") 部落格
+							span.item-frame(style="opacity: 1;")
+							span.item-frame(style="opacity: 1;")
+							span.item-frame(style="opacity: 1;")
+							span.item-frame(style="opacity: 1;")
+						li.nav-item
+							a(href="#") 關於我
+							span.item-frame(style="opacity: 1;")
+							span.item-frame(style="opacity: 1;")
+							span.item-frame(style="opacity: 1;")
+							span.item-frame(style="opacity: 1;")
 
-		section.d-flex.flex-column.align-items-center.text-center
-			.slogan
-				p.fs-4.mb-4 讓使用者在觀賞與使用的旅程中，發現設計的價值
-				p.fs-4.mb-4 標題裝飾而我在設計與開發的過程中，看見自己的價值
+		section.slogan-banner.d-flex.flex-column.align-items-center.text-center
+			.slogan.position-relative
+				img.slogan-quote-l(src="img/quote/quote-left.png", alt="qute-left")
+				p.fs-4.mb-4 讓使用者在觀賞與使用的旅程中，發現
+					span.mark-line.position-relative 設計的價值
+						img.mark.position-absolute(src="img/mark.png", alt="mark")
+				p.fs-4.mb-4 標題裝飾而我在設計與開發的過程中，看見
+					span.mark-line.position-relative 自己的價值
+						img.mark.position-absolute(src="img/mark.png", alt="mark")
+				img.slogan-quote-r(src="img/quote/quote-right.png", alt="qute-right")
 			.exp-list
 				.exp.d-flex.flex-column.align-items-center
 					h6 2B經驗
@@ -63,9 +69,9 @@ html(lang="en")
 					p 跨國美妝保養電商、個人品牌網站、醫美網站、電子商務
 
 		main.container
-			ul.card-list.row.row-cols-lg-2
+			ul.card-list.row.row-cols-lg-2.maw100p
 				li.card.list-unstyled.border-0.card-radius.pb-5
-					img.card-img-top.mt-3.card-radius(src="img/work/work-img1.png", alt="星際旅行訂票平台")
+					img.card-img-top.mt-3.card-radius.maw100p(src="img/work/work-img1.png", alt="星際旅行訂票平台")
 					.card-body
 						h3.card-title 星際旅行訂票平台
 						p.card-text 悠遊宇宙的夢想，從這裡開始實現
@@ -78,7 +84,7 @@ html(lang="en")
 								a(href="#") Bootstrap
 								
 				li.card.list-unstyled.border-0.card-radius.pb-5
-					img.card-img-top.mt-3.card-radius(src="img/work/work-img2.png" alt="理財App")
+					img.card-img-top.mt-3.card-radius.maw100p(src="img/work/work-img2.png" alt="理財App")
 					.card-body
 						h3.card-title 理財App
 						p.card-text 連動帳戶與行動支付，讓AI提供您最好的理財選擇
@@ -91,7 +97,7 @@ html(lang="en")
 								a(href="#") React
 									
 				li.card.list-unstyled.border-0.card-radius.pb-5
-					img.card-img-top.mt-3.card-radius(src="img/work/work-img3.png" alt="醫美診所官網")
+					img.card-img-top.mt-3.card-radius.maw100p(src="img/work/work-img3.png" alt="醫美診所官網")
 					.card-body
 						h3.card-title 醫美診所官網
 						p.card-text 永保青春的秘密，從粹究開始
@@ -104,7 +110,7 @@ html(lang="en")
 								a(href="#") WordPress
 									
 				li.card.list-unstyled.border-0.card-radius.pb-5
-					img.card-img-top.mt-3.card-radius(src="img/work/work-img4.png", alt="美美美早餐店POS機UI Design")
+					img.card-img-top.mt-3.card-radius.maw100p(src="img/work/work-img4.png", alt="美美美早餐店POS機UI Design")
 					.card-body
 						h3.card-title 美美美早餐店POS機UI Design
 						p.card-text 訂單送單一目瞭然，自動報表分析好輕鬆
@@ -117,7 +123,7 @@ html(lang="en")
 								a(href="#") Wix
 
 				li.card.list-unstyled.border-0.card-radius.pb-5
-					img.card-img-top.mt-3.card-radius(src="img/work/work-img5.png", alt="電影院訂票系統")
+					img.card-img-top.mt-3.card-radius.maw100p(src="img/work/work-img5.png", alt="電影院訂票系統")
 					.card-body
 						h3.card-title 電影院訂票系統
 						p.card-text 三步驟完成訂票，電腦手機都支援
@@ -130,7 +136,7 @@ html(lang="en")
 								a(href="#") Vue
 
 				li.card.list-unstyled.border-0.card-radius.pb-5
-					img.card-img-top.mt-3.card-radius(src="img/work/work-img6.png", alt="巧克巧克形象官網設計")
+					img.card-img-top.mt-3.card-radius.maw100p(src="img/work/work-img6.png", alt="巧克巧克形象官網設計")
 					.card-body
 						h3.card-title 巧克巧克形象官網設計
 						p.card-text 三步驟完成訂票，電腦手機都支援
@@ -141,3 +147,12 @@ html(lang="en")
 								a(href="#") 設計系統
 							li.list-unstyled
 								a(href="#") 網路電商
+
+			ul.pagination
+				li
+
+				li
+				
+				li
+
+		footer.footer footer內容footer內容footer內容footer內容footer內容footer內容footer內容
