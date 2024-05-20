@@ -1,3 +1,4 @@
+//-----------------------------定義-----------------------------
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 $main-color: #3b3b3b;
@@ -10,10 +11,23 @@ $second-color: #f1f1f1;
   max-width: 100%;
 }
 
-//-----------------------------定義-----------------------------
-@media (max-width: 576px) {
+//-------------------------------RWD-------------------------------
+
+@media (max-width: 991.98px) {
+  .exp-list{
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 32px;
+  }
+}
+@media (max-width: 575.98px) {
   .navbar-elements{
     max-width: 516px;
+  }
+  .exp-list{
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 32px;
   }
 }
 @media (min-width: 576px) {
@@ -22,11 +36,6 @@ $second-color: #f1f1f1;
   }
   .slogan{
     gap: 8px;
-  }
-  .exp-list{
-    flex-direction: column;
-    gap: 20px;
-    padding: 0 32px;
   }
 }
 @media (min-width: 768px) {
@@ -50,7 +59,8 @@ $second-color: #f1f1f1;
   }
 }
 
-//-------------------------------RWD-------------------------------
+//-------------------------------全域設定-------------------------------
+
 // *{
 //   outline: 1px solid black;
 // }
@@ -61,7 +71,6 @@ body{
 }
 
 a{
-  color: #000;
   text-decoration: none;
 }
 ul, ol{
@@ -69,10 +78,19 @@ ul, ol{
   margin: 0;
   list-style: none;
 }
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+//-------------------------------navbar-------------------------------
 
 .navbar{
   border-bottom: 1px solid $second-color;
 
+  a{
+    color: #000;
+  }
   h1{
     margin: 0;
   }
@@ -91,6 +109,8 @@ ul, ol{
 .nav-item{
   padding: 4px 8px;
 }
+
+//-------------------------------section-------------------------------
 
 section{
   background: #fafafa;
@@ -130,7 +150,6 @@ section{
   }
 }
 
-
 .exp-list{
   display: flex;
   color: $main-color;
@@ -160,29 +179,53 @@ section{
   width: 300px;
 }
 
+//-------------------------------main-------------------------------
+
 main{
   margin: 120px auto 0 auto;
+  gap: 72px;
 
-  .container{
-    padding: 0 12px;
-  }
   .row{
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
   }
 }
 
 .card{
-  transition-duration: 0.5s;
+  gap: 16px;
+  padding: 0;
 
-  &:hover{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    cursor: pointer;
-  }
   img{
+    max-width: 636px;
     height: auto;
     display: block;
     border: 1px solid $second-color;
+    transition-duration: 0.5s;
+    &:hover{
+      cursor: pointer;
+      border: none;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  }
+  &-list{
+    gap: 24px;
+  }
+  &-body{
+    gap: 16px;
+    padding: 0 16px 0 16px;
+  }
+  &-content{
+    gap: 8px;
+  }
+  &-title{
+    color: $main-color;
+    line-height: 1.2;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+  }
+  &-text{
+    color: #919191;
+    font-weight: 400;
   }
   &-tags{
     gap: 16px;
@@ -190,8 +233,8 @@ main{
       text-wrap: nowrap;
     } 
     a{
-      border-radius: 20px;
-      padding: 5px 10px;
+      border-radius: 16px;
+      padding: 4px 12px;
       color: $main-color;
       background: $second-color;
       transition-duration: 0.5s;
@@ -203,20 +246,6 @@ main{
   }
 }
 
-.card-body{
-  padding: 10px 10px 0 10px;
-  h3{
-    color: $main-color;
-    line-height: 1.2;
-    margin-bottom: 15px;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  p{
-    color: #919191;
-    margin-bottom: 20px;
-  }
-}
 
 .pagination{
     gap: 16px;
@@ -226,6 +255,10 @@ main{
       width: 40px;
       height: 40px;
       gap: 10px;
+      .pagination-alink1{
+        color: #fff;
+      background: #000;
+      }
     }
     a{
       line-height: 36px;
@@ -233,22 +266,35 @@ main{
       padding: 2px 13px;
       display: block;
       transition: 0.3s;
+      color: #000;
       &:hover{
         color: #fff;
         background: #000;
       }
     }
-    &-alink1{
-      color: #fff;
-      background: #000;
-    }
 }
+
+//-------------------------------footer-------------------------------
 
 .footer-lg{
   padding: 80px 312px;
+  max-height: 424px;
   border-top: 1px solid #fafafa;
-  height: 50px;
-  background: $second-color;
+  font-size: 20px;
+  color: $main-color;
+  a{
+    color: #919191;
+  }
+}
+
+.circle{
+  z-index: -1;
+  left: -10%;
+  top: -10%;
+  width: 813px;
+  height: 813px;
+  border: 5px dashed rgba(217,217,217,0.6);
+  border-radius: 50%;
 }
 
 .contact{

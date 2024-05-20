@@ -8,9 +8,22 @@
   max-width: 100%;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 991.98px) {
+  .exp-list {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 32px;
+  }
+}
+@media (max-width: 575.98px) {
   .navbar-elements {
     max-width: 516px;
+  }
+
+  .exp-list {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 32px;
   }
 }
 @media (min-width: 576px) {
@@ -20,12 +33,6 @@
 
   .slogan {
     gap: 8px;
-  }
-
-  .exp-list {
-    flex-direction: column;
-    gap: 20px;
-    padding: 0 32px;
   }
 }
 @media (min-width: 768px) {
@@ -54,7 +61,6 @@ body {
 }
 
 a {
-  color: #000;
   text-decoration: none;
 }
 
@@ -64,8 +70,16 @@ ul, ol {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .navbar {
   border-bottom: 1px solid #f1f1f1;
+}
+.navbar a {
+  color: #000;
 }
 .navbar h1 {
   margin: 0;
@@ -155,26 +169,48 @@ section {
 
 main {
   margin: 120px auto 0 auto;
-}
-main .container {
-  padding: 0 12px;
+  gap: 72px;
 }
 main .row {
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0;
 }
 
 .card {
-  transition-duration: 0.5s;
-}
-.card:hover {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  cursor: pointer;
+  gap: 16px;
+  padding: 0;
 }
 .card img {
+  max-width: 636px;
   height: auto;
   display: block;
   border: 1px solid #f1f1f1;
+  transition-duration: 0.5s;
+}
+.card img:hover {
+  cursor: pointer;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card-list {
+  gap: 24px;
+}
+.card-body {
+  gap: 16px;
+  padding: 0 16px 0 16px;
+}
+.card-content {
+  gap: 8px;
+}
+.card-title {
+  color: #3b3b3b;
+  line-height: 1.2;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+.card-text {
+  color: #919191;
+  font-weight: 400;
 }
 .card-tags {
   gap: 16px;
@@ -183,8 +219,8 @@ main .row {
   text-wrap: nowrap;
 }
 .card-tags a {
-  border-radius: 20px;
-  padding: 5px 10px;
+  border-radius: 16px;
+  padding: 4px 12px;
   color: #3b3b3b;
   background: #f1f1f1;
   transition-duration: 0.5s;
@@ -192,21 +228,6 @@ main .row {
 .card-tags a:hover {
   color: #f1f1f1;
   background: #3b3b3b;
-}
-
-.card-body {
-  padding: 10px 10px 0 10px;
-}
-.card-body h3 {
-  color: #3b3b3b;
-  line-height: 1.2;
-  margin-bottom: 15px;
-  font-size: 28px;
-  font-weight: bold;
-}
-.card-body p {
-  color: #919191;
-  margin-bottom: 20px;
 }
 
 .pagination {
@@ -219,27 +240,42 @@ main .row {
   height: 40px;
   gap: 10px;
 }
+.pagination li .pagination-alink1 {
+  color: #fff;
+  background: #000;
+}
 .pagination a {
   line-height: 36px;
   border-radius: 4px;
   padding: 2px 13px;
   display: block;
   transition: 0.3s;
+  color: #000;
 }
 .pagination a:hover {
-  color: #fff;
-  background: #000;
-}
-.pagination-alink1 {
   color: #fff;
   background: #000;
 }
 
 .footer-lg {
   padding: 80px 312px;
+  max-height: 424px;
   border-top: 1px solid #fafafa;
-  height: 50px;
-  background: #f1f1f1;
+  font-size: 20px;
+  color: #3b3b3b;
+}
+.footer-lg a {
+  color: #919191;
+}
+
+.circle {
+  z-index: -1;
+  left: -10%;
+  top: -10%;
+  width: 813px;
+  height: 813px;
+  border: 5px dashed rgba(217, 217, 217, 0.6);
+  border-radius: 50%;
 }
 
 .contact {
