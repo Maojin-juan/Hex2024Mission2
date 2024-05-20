@@ -14,6 +14,11 @@
     gap: 20px;
     padding: 0 32px;
   }
+
+  .footer-lg-container {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 @media (max-width: 575.98px) {
   .navbar-elements {
@@ -25,6 +30,10 @@
     gap: 20px;
     padding: 0 32px;
   }
+
+  .footer-lg-container {
+    max-width: 516px;
+  }
 }
 @media (min-width: 576px) {
   .navbar-elements {
@@ -34,9 +43,17 @@
   .slogan {
     gap: 8px;
   }
+
+  .footer-lg-container {
+    max-width: 516px;
+  }
 }
 @media (min-width: 768px) {
   .navbar-elements {
+    max-width: 696px;
+  }
+
+  .footer-lg-container {
     max-width: 696px;
   }
 }
@@ -44,14 +61,26 @@
   .navbar-elements {
     max-width: 936px;
   }
+
+  .footer-lg-container {
+    max-width: 936px;
+  }
 }
 @media (min-width: 1200px) {
   .navbar-elements {
     max-width: 1116px;
   }
+
+  .footer-lg-container {
+    max-width: 1116px;
+  }
 }
 @media (min-width: 1400px) {
   .navbar-elements {
+    max-width: 1296px;
+  }
+
+  .footer-lg-container {
     max-width: 1296px;
   }
 }
@@ -124,7 +153,7 @@ section {
   background: none;
   z-index: -1;
   transform: translateX(-50%);
-  bottom: -5px;
+  bottom: -3px;
   left: 50%;
 }
 .slogan img {
@@ -168,35 +197,28 @@ section {
 }
 
 main {
-  margin: 120px auto 0 auto;
+  margin: 120px 0 auto;
   gap: 72px;
-}
-main .row {
-  margin: 0;
 }
 
 .card {
   gap: 16px;
-  padding: 0;
 }
-.card img {
-  max-width: 636px;
+.card-img-top {
+  max-width: 100%;
   height: auto;
   display: block;
   border: 1px solid #f1f1f1;
   transition-duration: 0.5s;
 }
-.card img:hover {
+.card-img-top:hover {
   cursor: pointer;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.card-list {
-  gap: 24px;
-}
 .card-body {
-  gap: 16px;
-  padding: 0 16px 0 16px;
+  gap: 24px;
+  padding: 0 16px;
 }
 .card-content {
   gap: 8px;
@@ -216,6 +238,7 @@ main .row {
   gap: 16px;
 }
 .card-tags li {
+  gap: 10px;
   text-wrap: nowrap;
 }
 .card-tags a {
@@ -258,14 +281,17 @@ main .row {
 }
 
 .footer-lg {
-  padding: 80px 312px;
-  max-height: 424px;
-  border-top: 1px solid #fafafa;
-  font-size: 20px;
-  color: #3b3b3b;
+  background-color: #fafafa;
 }
 .footer-lg a {
   color: #919191;
+}
+.footer-lg-container {
+  padding: 80px 0;
+  margin: 0 auto;
+  max-height: 424px;
+  font-size: 20px;
+  color: #3b3b3b;
 }
 
 .circle {
