@@ -15,19 +15,19 @@
         <h1><a class="navbar-link" href="#"><img class="navbar-logo position-absolute" src="img/logo_svg/logo.svg" alt="logo"></a></h1>
         <nav>
           <ul class="navbar-nav flex-row justify-content-center">
-            <li class="nav-item"> <a href="#">首頁</a><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span></li>
-            <li class="nav-item"><a href="#">作品集</a><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span></li>
-            <li class="nav-item"><a href="#">服務項目</a><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span></li>
-            <li class="nav-item"> <a href="#">部落格</a><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span></li>
-            <li class="nav-item"><a href="#">關於我</a><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span><span class="item-frame" style="opacity: 1;"></span></li>
+            <li class="nav-item"> <a class="nav-pag" href="#">首頁</a></li>
+            <li class="nav-item nav-top"><a class="nav-pag" href="#">作品集</a></li>
+            <li class="nav-item"><a class="nav-pag" href="#">服務項目</a></li>
+            <li class="nav-item"> <a class="nav-pag" href="#">部落格</a></li>
+            <li class="nav-item"><a class="nav-pag" href="#">關於我</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <section class="slogan-banner d-flex flex-column align-items-center text-center">
       <div class="slogan flex-column position-relative"><img class="slogan-quote-l" src="img/quote/quote-left.png" alt="qute-left">
-        <p class="fs-4">讓使用者在觀賞與使用的旅程中，發現<span class="mark-line position-relative">設計的價值<img class="mark position-absolute" src="img/mark.png" alt="mark"></span></p>
-        <p class="fs-4">而我在設計與開發的過程中，看見<span class="mark-line position-relative">自己的價值<img class="mark position-absolute" src="img/mark.png" alt="mark"></span></p><img class="slogan-quote-r" src="img/quote/quote-right.png" alt="qute-right">
+        <p class="fs-4">讓使用者在觀賞與使用的旅程中，發現<span class="mark-line position-relative">設計的價值<img class="mark" src="img/mark.png" alt="mark"></span></p>
+        <p class="fs-4">而我在設計與開發的過程中，看見<span class="mark-line position-relative">自己的價值<img class="mark" src="img/mark.png" alt="mark"></span></p><img class="slogan-quote-r" src="img/quote/quote-right.png" alt="qute-right">
       </div>
       <div class="exp-list">
         <div class="exp d-flex flex-column align-items-center">
@@ -122,20 +122,20 @@
         </li>
       </ul>
       <ul class="pagination d-flex justify-content-center">
-        <li><a class="pagination-alink1 fs-4" href="#">1</a></li>
-        <li><a class="fs-4" href="#">2</a></li>
-        <li><a class="fs-4" href="#">3</a></li>
+        <li><a class="pagination-enable fs-4" href="#">1</a></li>
+        <li><a class="pagination-disable fs-4" href="#">2</a></li>
+        <li><a class="pagination-disable fs-4" href="#">3</a></li>
       </ul>
     </main>
-    <footer class="footer-lg position-relative overflow-hidden"><span class="circle position-absolute"></span>
-      <div class="footer-lg-container d-flex justify-content-between">
-        <div class="contact"><a href="#"><img src="img/logo_svg/logo.svg" alt="footer_logo"></a>
-          <p>若有數位產品設計和開發相關問題<br>歡迎填寫表單，或直接與我聯絡！</p><a href="mailto: service@hexschool.com" target="_blank">service@hexschool.com</a>
+    <footer class="footer">
+      <div class="footer-container d-flex align-items-center justify-content-between">
+        <div class="contact d-flex flex-column"><a class="footer-link" href="#"><img src="img/logo_svg/logo.svg" alt="footer_logo"></a>
+          <p>若有數位產品設計和開發相關問題<br>歡迎填寫表單，或直接與我聯絡！</p><a class="footer-link" href="mailto: service@hexschool.com" target="_blank">service@hexschool.com</a>
         </div>
-        <ul class="sns">
-          <li><a href="#"><img src="img/logo_svg/list.svg" alt="填寫表單"></a></li>
-          <li><a href="">hexschool_demo<img src="img/logo_svg/instagram.svg" alt="instergram"></a></li>
-          <li><a href="#">hexschoolTW<img src="img/logo_svg/facebook.svg" alt="facebook"></a></li>
+        <ul class="sns d-flex flex-column">
+          <li><a class="sns-enable" href="#"><img src="img/logo_svg/list.svg" alt="填寫表單">填寫表單</a></li>
+          <li><a class="sns-disable" href="#"><img src="img/logo_svg/instagram.svg" alt="instergram">hexschool_demo</a></li>
+          <li><a class="sns-disable" href="#"><img src="img/logo_svg/facebook.svg" alt="facebook">hexschoolTW</a></li>
         </ul>
       </div>
     </footer>

@@ -3,6 +3,7 @@
 
 $main-color: #3b3b3b;
 $second-color: #f1f1f1;
+$nine-one-color: #919191;
 
 .card-radius{
   border-radius: 8px;
@@ -15,70 +16,127 @@ $second-color: #f1f1f1;
 
 @media (max-width: 991.98px) {
   .exp-list{
-    flex-direction: column;
-    gap: 20px;
-    padding: 0 32px;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 32px;
   }
-  .footer-lg-container{
+  .footer-container{
     flex-direction: column;
     text-align: center;
   }
 }
+  
+@media (max-width: 767.98px) {
+  .footer{
+    background-image: url("../img/footer/footer-bg-sm.png");
+  }
+}
+
 @media (max-width: 575.98px) {
   .navbar-elements{
     max-width: 516px;
   }
   .exp-list{
-    flex-direction: column;
-    gap: 20px;
-    padding: 0 32px;
-  }
-  .footer-lg-container{
-    max-width: 516px;
-  }
+  flex-direction: column;
+
+    gap: 20px;
+
+    padding: 0 32px;
+
+  }
+
+  .footer-container{
+
+    max-width: 516px;
+
+  }
+
 }
+
 @media (min-width: 576px) {
-  .navbar-elements{
-    max-width: 516px;
-  }
-  .slogan{
-    gap: 8px;
-  }
-  .footer-lg-container{
-    max-width: 516px;
-  }
+
+  .navbar-elements{
+
+    max-width: 516px;
+
+  }
+
+  .footer-container{
+
+    max-width: 516px;
+
+  }
+
 }
+
 @media (min-width: 768px) {
-  .navbar-elements{
-    max-width: 696px;
-  }
-  .footer-lg-container{
-    max-width: 696px;
-  }
+
+  .navbar-elements{
+
+    max-width: 696px;
+
+  }
+
+  .footer{
+
+    background-image: url("../img/footer/footer-bg-lg.png");
+
+    &-container{
+
+      max-width: 696px;
+
+    }
+
+  }
+
 }
+
 @media (min-width: 992px) {
-  .navbar-elements{
-    max-width: 936px;
-  }
-  .footer-lg-container{
-    max-width: 936px;
-  }
+
+  .navbar-elements{
+
+    max-width: 936px;
+
+  }
+
+  .footer-container{
+
+    max-width: 936px;
+
+  }
+
 }
+
 @media (min-width: 1200px) {
-  .navbar-elements{
-    max-width: 1116px;
-  }
-  .footer-lg-container{
-    max-width: 1116px;
-  }
+
+  .navbar-elements{
+
+    max-width: 1116px;
+
+  }
+
+  .footer-container{
+
+    max-width: 1116px;
+
+  }
+
 }
+
 @media (min-width: 1400px) {
-  .navbar-elements{
-    max-width: 1296px;
-  }
-  .footer-lg-container{
-    max-width: 1296px;
-  }
+
+  .navbar-elements{
+
+    max-width: 1296px;
+
+  }
+
+  .footer-container{
+
+    max-width: 1296px;
+
+  }
+
 }
 
 //-------------------------------全域設定-------------------------------
@@ -100,16 +158,75 @@ ul, ol{
   margin: 0;
   list-style: none;
 }
-img{
-  max-width: 100%;
-  height: auto;
+
+//-------------------------------效果-------------------------------
+
+.nav-top{
+  background:
+  linear-gradient(to right, $nine-one-color 1px, transparent 1px) 0 0,
+  linear-gradient(to right, $nine-one-color 1px, transparent 1px) 0 100%,
+  linear-gradient(to left, $nine-one-color 1px, transparent 1px) 100% 0,
+  linear-gradient(to left, $nine-one-color 1px, transparent 1px) 100% 100%,
+  linear-gradient(to bottom, $nine-one-color 1px, transparent 1px) 0 0,
+  linear-gradient(to bottom, $nine-one-color 1px, transparent 1px) 100% 0,
+  linear-gradient(to top, $nine-one-color 1px, transparent 1px) 0 100%,
+  linear-gradient(to top, $nine-one-color 1px, transparent 1px) 100% 100%;
+  
+  font-weight: 600;
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+}
+
+.pagination-enable{
+  color: #fff;
+  background: #000;
+}
+.pagination-disable{
+  color: #000;
+}
+    
+.sns-enable{
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+  &:hover{
+  color: #fff;
+  }
+}
+  
+.sns-disable{
+  color: $main-color;
+  background-color: #fff;
+  border: 1px solid #C1C1C1;
+  &:hover{
+  color: $main-color;
+  }
 }
 
 //-------------------------------navbar-------------------------------
 
 .navbar{
   border-bottom: 1px solid $second-color;
+  
+  li{
+    transition: 0.1s;
 
+    &:hover{
+      background:
+      linear-gradient(to right, $nine-one-color 1px, transparent 1px) 0 0,
+      linear-gradient(to right, $nine-one-color 1px, transparent 1px) 0 100%,
+      linear-gradient(to left, $nine-one-color 1px, transparent 1px) 100% 0,
+      linear-gradient(to left, $nine-one-color 1px, transparent 1px) 100% 100%,
+      linear-gradient(to bottom, $nine-one-color 1px, transparent 1px) 0 0,
+      linear-gradient(to bottom, $nine-one-color 1px, transparent 1px) 100% 0,
+      linear-gradient(to top, $nine-one-color 1px, transparent 1px) 0 100%,
+      linear-gradient(to top, $nine-one-color 1px, transparent 1px) 100% 100%;
+    
+      font-weight: 600;
+      background-repeat: no-repeat;
+      background-size: 8px 8px;
+    }
+  }
   a{
     color: #000;
   }
@@ -124,12 +241,13 @@ img{
     gap: 40px;
   }
 }
+.nav-pag{
+  display: block;
+  padding: 4px 8px;
+}
 .navbar-elements{
   width: 100%;
   margin: 0 auto;
-}
-.nav-item{
-  padding: 4px 8px;
 }
 
 //-------------------------------section-------------------------------
@@ -238,7 +356,7 @@ main{
     margin: 0;
   }
   &-text{
-    color: #919191;
+    color: $nine-one-color;
     font-weight: 400;
   }
   &-tags{
@@ -263,59 +381,70 @@ main{
 
 
 .pagination{
-    gap: 16px;
-    padding-bottom: 120px;
-    min-height: calc(100% - 50px);
-    li{
-      width: 40px;
-      height: 40px;
-      gap: 10px;
-      .pagination-alink1{
-        color: #fff;
+  gap: 16px;
+  padding-bottom: 120px;
+  min-height: calc(100% - 50px);
+  li{
+    width: 40px;
+    height: 40px;
+    gap: 10px;
+  }
+  a{
+    line-height: 36px;
+    border-radius: 4px;
+    padding: 2px 13px;
+    display: block;
+    transition: 0.3s;
+    &:hover{
+      color: #fff;
       background: #000;
-      }
     }
-    a{
-      line-height: 36px;
-      border-radius: 4px;
-      padding: 2px 13px;
-      display: block;
-      transition: 0.3s;
-      color: #000;
-      &:hover{
-        color: #fff;
-        background: #000;
-      }
-    }
+  }
 }
 
 //-------------------------------footer-------------------------------
 
-.footer-lg{
-  background-color: #fafafa;
+footer{
+  background-size: cover;
+  gap: 40px;
 
-  a{
-    color: #919191;
+  &-link{
+  color: $nine-one-color;
   }
   &-container{
     padding: 80px 0;
     margin: 0 auto;
-    max-height: 424px;
+    height: auto;
     font-size: 20px;
     color: $main-color;
   }
 }
 
-.circle{
-  z-index: -1;
-  left: -10%;
-  top: -10%;
-  width: 813px;
-  height: 813px;
-  border: 5px dashed rgba(217,217,217,0.6);
-  border-radius: 50%;
-}
+  /* 廢案保留
+  .circle{
+    z-index: -1;
+    left: -10%;
+    top: -10%;
+    width: 813px;
+    height: 813px;
+    border: 5px dashed rgba(217,217,217,0.6);
+    border-radius: 50%;
+  }
+  */
 
 .contact{
   gap: 24px;
+}
+
+.sns{
+  gap: 24px;
+
+  li{
+    gap: 8px;
+  }
+  a{
+    display: block;
+    border-radius: 8px;
+    padding: 8px 24px;
+  }
 }

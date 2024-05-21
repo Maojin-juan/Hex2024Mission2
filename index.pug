@@ -20,45 +20,25 @@ html(lang="en")
 				nav
 					ul.navbar-nav.flex-row.justify-content-center
 						li.nav-item 
-							a(href="#") 首頁
-							span.item-frame(style="opacity: 1;")
-							span.item-frame(style="opacity: 1;")
-							span.item-frame(style="opacity: 1;")
-							span.item-frame(style="opacity: 1;")
+							a.nav-pag(href="#") 首頁
+						li.nav-item.nav-top
+							a.nav-pag(href="#") 作品集
 						li.nav-item
-							a(href="#") 作品集
-							span.item-frame(style="opacity: 1;")
-							span.item-frame(style="opacity: 1;")
-							span.item-frame(style="opacity: 1;")
-							span.item-frame(style="opacity: 1;")
-						li.nav-item
-							a(href="#") 服務項目
-							span.item-frame(style="opacity: 1;")
-							span.item-frame(style="opacity: 1;")
-							span.item-frame(style="opacity: 1;")
-							span.item-frame(style="opacity: 1;")
+							a.nav-pag(href="#") 服務項目
 						li.nav-item 
-							a(href="#") 部落格
-							span.item-frame(style="opacity: 1;")
-							span.item-frame(style="opacity: 1;")
-							span.item-frame(style="opacity: 1;")
-							span.item-frame(style="opacity: 1;")
+							a.nav-pag(href="#") 部落格
 						li.nav-item
-							a(href="#") 關於我
-							span.item-frame(style="opacity: 1;")
-							span.item-frame(style="opacity: 1;")
-							span.item-frame(style="opacity: 1;")
-							span.item-frame(style="opacity: 1;")
+							a.nav-pag(href="#") 關於我
 
 		section.slogan-banner.d-flex.flex-column.align-items-center.text-center
 			.slogan.flex-column.position-relative
 				img.slogan-quote-l(src="img/quote/quote-left.png", alt="qute-left")
 				p.fs-4 讓使用者在觀賞與使用的旅程中，發現
 					span.mark-line.position-relative 設計的價值
-						img.mark.position-absolute(src="img/mark.png", alt="mark")
+						img.mark(src="img/mark.png", alt="mark")
 				p.fs-4 而我在設計與開發的過程中，看見
 					span.mark-line.position-relative 自己的價值
-						img.mark.position-absolute(src="img/mark.png", alt="mark")
+						img.mark(src="img/mark.png", alt="mark")
 				img.slogan-quote-r(src="img/quote/quote-right.png", alt="qute-right")
 			.exp-list
 				.exp.d-flex.flex-column.align-items-center
@@ -156,29 +136,33 @@ html(lang="en")
 
 			ul.pagination.d-flex.justify-content-center
 				li
-					a.pagination-alink1.fs-4(href="#") 1
+					a.pagination-enable.fs-4(href="#") 1
 				li
-					a.fs-4(href="#") 2
+					a.pagination-disable.fs-4(href="#") 2
 				li
-					a.fs-4(href="#") 3
+					a.pagination-disable.fs-4(href="#") 3
 
-		footer.footer-lg.position-relative.overflow-hidden
-			span.circle.position-absolute
-			.footer-lg-container.d-flex.justify-content-between
-				.contact
-					a(href="#")
+		footer.footer
+			.footer-container.d-flex.align-items-center.justify-content-between
+				.contact.d-flex.flex-column
+					//- 廢案保留span.circle.position-absolute
+					a.footer-link(href="#")
 						img(src="img/logo_svg/logo.svg" alt="footer_logo")
 					p 若有數位產品設計和開發相關問題
 						br
 						| 歡迎填寫表單，或直接與我聯絡！
-					a(href="mailto: service@hexschool.com" target="_blank") service@hexschool.com
-				ul.sns
+					
+					a.footer-link(href="mailto: service@hexschool.com" target="_blank") service@hexschool.com
+				ul.sns.d-flex.flex-column
 					li
-						a(href="#")
+						a.sns-enable(href="#")
 							img(src="img/logo_svg/list.svg" alt="填寫表單")
+							| 填寫表單
 					li
-						a(href="") hexschool_demo
+						a.sns-disable(href="#")
 							img(src="img/logo_svg/instagram.svg" alt="instergram")
+							| hexschool_demo
 					li
-						a(href="#") hexschoolTW
+						a.sns-disable(href="#")
 							img(src="img/logo_svg/facebook.svg" alt="facebook")
+							| hexschoolTW
