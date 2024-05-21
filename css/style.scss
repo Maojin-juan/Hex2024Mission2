@@ -37,106 +37,62 @@ $nine-one-color: #919191;
     max-width: 516px;
   }
   .exp-list{
-  flex-direction: column;
-
-    gap: 20px;
-
-    padding: 0 32px;
-
-  }
-
-  .footer-container{
-
-    max-width: 516px;
-
-  }
-
+   flex-direction: column;
+   gap: 20px;
+   padding: 0 32px;
+  }
+  .footer-container{
+    max-width: 516px;
+  }
 }
 
 @media (min-width: 576px) {
-
-  .navbar-elements{
-
-    max-width: 516px;
-
-  }
-
-  .footer-container{
-
-    max-width: 516px;
-
-  }
-
+  .navbar-elements{
+    max-width: 516px;
+  }
+  .footer-container{
+    max-width: 516px;
+  }
 }
 
 @media (min-width: 768px) {
-
-  .navbar-elements{
-
-    max-width: 696px;
-
-  }
-
-  .footer{
-
-    background-image: url("../img/footer/footer-bg-lg.png");
-
-    &-container{
-
-      max-width: 696px;
-
-    }
-
-  }
-
+  .navbar-elements{
+    max-width: 696px;
+  }
+  .footer{
+    background-image: url("../img/footer/footer-bg-lg.png");
+    &-container{
+      max-width: 696px;
+    }
+  }
 }
 
 @media (min-width: 992px) {
-
-  .navbar-elements{
-
-    max-width: 936px;
-
-  }
-
-  .footer-container{
-
-    max-width: 936px;
-
-  }
-
+  .navbar-elements{
+   max-width: 936px;
+  }
+  .footer-container{
+   max-width: 936px;
+  }
 }
 
 @media (min-width: 1200px) {
-
-  .navbar-elements{
-
-    max-width: 1116px;
-
-  }
-
-  .footer-container{
-
-    max-width: 1116px;
-
-  }
-
+  .navbar-elements{
+   max-width: 1116px;
+  }
+  .footer-container{
+   max-width: 1116px;
+  }
 }
 
 @media (min-width: 1400px) {
+  .navbar-elements{
+   max-width: 1296px;
+  }
 
-  .navbar-elements{
-
-    max-width: 1296px;
-
-  }
-
-  .footer-container{
-
-    max-width: 1296px;
-
-  }
-
+  .footer-container{
+   max-width: 1296px;
+  }
 }
 
 //-------------------------------全域設定-------------------------------
@@ -153,10 +109,15 @@ body{
 a{
   text-decoration: none;
 }
+
 ul, ol{
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+p{
+  margin: 0;
 }
 
 //-------------------------------效果-------------------------------
@@ -404,14 +365,17 @@ main{
 
 //-------------------------------footer-------------------------------
 
-footer{
+.footer{
   background-size: cover;
-  gap: 40px;
 
   &-link{
-  color: $nine-one-color;
+    color: $nine-one-color;
+    &:hover{
+       color: $main-color;
+    }
   }
   &-container{
+    gap: 40px;
     padding: 80px 0;
     margin: 0 auto;
     height: auto;
@@ -420,31 +384,33 @@ footer{
   }
 }
 
-  /* 廢案保留
-  .circle{
-    z-index: -1;
-    left: -10%;
-    top: -10%;
-    width: 813px;
-    height: 813px;
-    border: 5px dashed rgba(217,217,217,0.6);
-    border-radius: 50%;
-  }
-  */
+/* 廢案保留
+.circle{
+  z-index: -1;
+  left: -10%;
+  top: -10%;
+  width: 813px;
+  height: 813px;
+  border: 5px dashed rgba(217,217,217,0.6);
+  border-radius: 50%;
+}
+*/
 
 .contact{
+  width: 686px;
   gap: 24px;
 }
 
 .sns{
+  width: 306px;
   gap: 24px;
 
   li{
     gap: 8px;
   }
   a{
-    display: block;
     border-radius: 8px;
     padding: 8px 24px;
+    font-weight: 700;
   }
 }
