@@ -293,6 +293,8 @@ main{
 .pagination{
   padding-bottom: 120px;
   min-height: calc(100% - 50px);
+  gap: 16px;
+
   li{
     width: 40px;
     height: 40px;
