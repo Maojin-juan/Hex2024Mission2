@@ -12,13 +12,13 @@ html(lang="en")
 		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
 
 	body
-		header.navbar.justify-content-center
-			.navbar-elements
-				h1
-					a.navbar-link(href="#")
-						img.navbar-logo.position-absolute(src="img/logo_svg/logo.svg", alt="logo") 
-				nav
-					ul.navbar-nav.flex-row.justify-content-center.gap40
+		nav.navbar.navbar-expand-lg.navbar-light.bg-light
+			header.container.position-relative
+				h1.mb-0.position-absolute
+					a.navbar-brand.m-0.p-0(href="#")
+						img.site-logo(src="img/logo_svg/logo.svg", alt="logo")
+				#navbarSupportedContent.collapse.navbar-collapse.justify-content-center
+					ul.navbar-nav.gap40
 						li.nav-item 
 							a.nav-pag(href="#") 首頁
 						li.nav-item.nav-top
@@ -143,7 +143,7 @@ html(lang="en")
 					a.pagination-disable.fs-4(href="#") 3
 
 		footer.footer
-			.footer-container.d-flex.align-items-center.justify-content-between.gap40
+			.container.d-flex.align-items-center.justify-content-between.gap40
 				.contact.d-flex.flex-column
 					//- 廢案保留span.circle.position-absolute
 					a.footer-link(href="#")

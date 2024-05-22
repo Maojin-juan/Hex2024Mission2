@@ -27,9 +27,11 @@ $white: #fff;
   gap: 20px;
   padding: 0 32px;
   }
-  .footer-container{
-    flex-direction: column;
-    text-align: center;
+  .footer{
+    .container{
+      flex-direction: column;
+      text-align: center;
+    }
   }
 }
   
@@ -40,65 +42,16 @@ $white: #fff;
 }
 
 @media (max-width: 575.98px) {
-  .navbar-elements{
-    max-width: 516px;
-  }
   .exp-list{
    flex-direction: column;
    gap: 20px;
    padding: 0 32px;
   }
-  .footer-container{
-    max-width: 516px;
-  }
-}
-
-@media (min-width: 576px) {
-  .navbar-elements{
-    max-width: 516px;
-  }
-  .footer-container{
-    max-width: 516px;
-  }
 }
 
 @media (min-width: 768px) {
-  .navbar-elements{
-    max-width: 696px;
-  }
   .footer{
     background-image: url("../img/footer/footer-bg-lg.png");
-    &-container{
-      max-width: 696px;
-    }
-  }
-}
-
-@media (min-width: 992px) {
-  .navbar-elements{
-   max-width: 936px;
-  }
-  .footer-container{
-   max-width: 936px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .navbar-elements{
-   max-width: 1116px;
-  }
-  .footer-container{
-   max-width: 1116px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .navbar-elements{
-   max-width: 1296px;
-  }
-
-  .footer-container{
-   max-width: 1296px;
   }
 }
 
@@ -175,10 +128,7 @@ p{
 
 .navbar{
   border-bottom: 1px solid $second-color;
-  
-  .container{
-    position: relative;
-  }
+
   li{
     transition: 0.2s;
 
@@ -198,26 +148,20 @@ p{
       background-size: 8px 8px;
     }
   }
+  .container{
+    gap: 568px;
+    height: 96px;
+  }
   a{
     color: $black;
   }
-  h1{
-    margin: 0;
-  }
-  &-logo{
-    top: 36px;
-  }
-  &-nav{
-    padding: 32px 0;
-  }
+}
+.site-logo{
+  padding: 22px 0;
 }
 .nav-pag{
   display: block;
   padding: 4px 8px;
-}
-.navbar-elements{
-  width: 100%;
-  margin: 0 auto;
 }
 
 //-------------------------------section-------------------------------
@@ -378,10 +322,8 @@ main{
        color: $main-color;
     }
   }
-  &-container{
+  .container{
     padding: 80px 0;
-    margin: 0 auto;
-    height: auto;
     font-size: 20px;
     color: $main-color;
   }
