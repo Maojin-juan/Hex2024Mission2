@@ -8,6 +8,10 @@
   max-width: 100%;
 }
 
+.gap40 {
+  gap: 40px;
+}
+
 @media (max-width: 991.98px) {
   .exp-list {
     flex-direction: column;
@@ -135,7 +139,7 @@ p {
 .sns-disable {
   color: #3b3b3b;
   background-color: #fff;
-  border: 1px solid #C1C1C1;
+  border: 1px solid #c1c1c1;
 }
 .sns-disable:hover {
   color: #3b3b3b;
@@ -144,8 +148,11 @@ p {
 .navbar {
   border-bottom: 1px solid #f1f1f1;
 }
+.navbar .container {
+  position: relative;
+}
 .navbar li {
-  transition: 0.1s;
+  transition: 0.2s;
 }
 .navbar li:hover {
   background: linear-gradient(to right, #919191 1px, transparent 1px) 0 0, linear-gradient(to right, #919191 1px, transparent 1px) 0 100%, linear-gradient(to left, #919191 1px, transparent 1px) 100% 0, linear-gradient(to left, #919191 1px, transparent 1px) 100% 100%, linear-gradient(to bottom, #919191 1px, transparent 1px) 0 0, linear-gradient(to bottom, #919191 1px, transparent 1px) 100% 0, linear-gradient(to top, #919191 1px, transparent 1px) 0 100%, linear-gradient(to top, #919191 1px, transparent 1px) 100% 100%;
@@ -164,7 +171,6 @@ p {
 }
 .navbar-nav {
   padding: 32px 0;
-  gap: 40px;
 }
 
 .nav-pag {
@@ -179,14 +185,11 @@ p {
 
 section {
   background: #fafafa;
-  gap: 24px;
   padding: 80px 0;
 }
 
 .slogan {
-  display: flex;
   padding: 59px 71px;
-  gap: 16px;
 }
 .slogan p {
   margin-bottom: 0;
@@ -216,16 +219,14 @@ section {
 }
 
 .exp-list {
-  display: flex;
   color: #3b3b3b;
-  gap: 40px;
 }
 .exp-list h6 {
   color: #5b5b5b;
 }
 .exp-list h6::before {
   content: "";
-  border-bottom: 2px solid #C1C1C1;
+  border-bottom: 2px solid #c1c1c1;
   z-index: 2;
   top: 25px;
   left: 47%;
@@ -301,7 +302,6 @@ main {
 }
 
 .pagination {
-  gap: 16px;
   padding-bottom: 120px;
   min-height: calc(100% - 50px);
 }
@@ -332,7 +332,6 @@ main {
   color: #3b3b3b;
 }
 .footer-container {
-  gap: 40px;
   padding: 80px 0;
   margin: 0 auto;
   height: auto;
