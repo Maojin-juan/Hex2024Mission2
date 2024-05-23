@@ -23,7 +23,7 @@ html(lang="en")
 				#navbarSupportedContent.collapse.navbar-collapse.justify-content-center
 					ul.navbar-nav.gap40
 						li.nav-item 
-							a.nav-pag(href="#") 首頁
+							a.nav-pag(aria-current="page" href="#") 首頁
 						li.nav-item.nav-top
 							a.nav-pag(href="#") 作品集
 						li.nav-item
@@ -147,7 +147,7 @@ html(lang="en")
 
 		footer.footer
 			.container.d-flex.align-items-center.justify-content-between.gap40
-				.contact.d-flex.flex-column
+				.contact.row
 					//- 廢案保留span.circle.position-absolute
 					a.footer-link(href="#")
 						img(src="img/logo_svg/logo.svg" alt="footer_logo")
