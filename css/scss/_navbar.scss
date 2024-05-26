@@ -1,0 +1,37 @@
+.navbar{
+  border-bottom: 1px solid $second-color;
+
+  li{
+    transition: 0.2s;
+
+    &:hover{
+      background:
+      linear-gradient(to right, $nine-one-color 1px, transparent 1px) 0 0,
+      linear-gradient(to right, $nine-one-color 1px, transparent 1px) 0 100%,
+      linear-gradient(to left, $nine-one-color 1px, transparent 1px) 100% 0,
+      linear-gradient(to left, $nine-one-color 1px, transparent 1px) 100% 100%,
+      linear-gradient(to bottom, $nine-one-color 1px, transparent 1px) 0 0,
+      linear-gradient(to bottom, $nine-one-color 1px, transparent 1px) 100% 0,
+      linear-gradient(to top, $nine-one-color 1px, transparent 1px) 0 100%,
+      linear-gradient(to top, $nine-one-color 1px, transparent 1px) 100% 100%;
+    
+      font-weight: 600;
+      background-repeat: no-repeat;
+      background-size: 8px 8px;
+    }
+  }
+  .container{
+    gap: 568px;
+    height: 96px;
+  }
+  a{
+    color: $black;
+  }
+}
+.site-logo{
+  padding: 22px 0;
+}
+.nav-pag{
+  display: block;
+  padding: 4px 8px;
+}

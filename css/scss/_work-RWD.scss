@@ -1,0 +1,33 @@
+@media (max-width: 991.98px) {
+  .exp-list{
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 32px;
+  }
+  .footer{
+    .container{
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}
+  
+@media (max-width: 767.98px) {
+  .footer{
+    background-image: url("../img/footer/footer-bg-sm.png");
+  }
+}
+
+@media (max-width: 575.98px) {
+  .exp-list{
+   flex-direction: column;
+   gap: 20px;
+   padding: 0 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer{
+    background-image: url("../img/footer/footer-bg-lg.png");
+  }
+}

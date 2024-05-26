@@ -1,0 +1,142 @@
+//-----------------------------引用-----------------------------
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "bootstrap/bootstrap";
+@import "style";
+@import "navbar";
+@import "footer";
+@import "work-RWD";
+
+//-------------------------------section-------------------------------
+
+section{
+  background: #fafafa;
+  padding: 80px 0;
+}
+
+.slogan{
+  padding: 59px 71px;
+
+  p{
+    margin-bottom: 0;
+  }
+  span{
+    display: inline-block;/*跳行*/
+    z-index: 0;
+    img{
+      background: none;
+      z-index: -1;
+      transform: translateX(-50%);
+      bottom: -3px;
+      left: 50%;
+    }
+  }
+  img{
+    position: absolute;
+  }
+  &-quote-l{
+    top: 0;
+    left: 0;
+  }
+  &-quote-r{
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.exp-list{
+  h6{
+    color: #5b5b5b;
+    &::before{
+      content: "";
+      border-bottom: 2px solid $c-one-color;
+      z-index: 2;
+      top: 25px;
+      left: 47%;
+      width: 24px;
+      position: absolute;
+    }
+  }
+  p{
+    margin: 0;
+  }
+}
+
+.exp{
+  position: relative;
+  width: 300px;
+}
+
+//-------------------------------main-------------------------------
+
+main{
+  margin: 120px 0 auto;
+  gap: 72px;
+}
+
+.card{
+  &-img-top{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid $second-color;
+    transition-duration: 0.5s;
+    &:hover{
+      cursor: pointer;
+      border: none;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  }
+  &-body{
+    padding: 0 16px;
+  }
+  &-title{
+    line-height: 1.2;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+  }
+  &-text{
+    color: $nine-one-color;
+    font-weight: 400;
+  }
+  &-tags{
+
+    li{
+      gap: 10px;
+      text-wrap: nowrap;
+    } 
+    a{
+      border-radius: 16px;
+      padding: 4px 12px;
+      background: $second-color;
+      transition-duration: 0.5s;
+      &:hover{
+        color: $second-color;
+      }
+    }
+  }
+}
+
+
+.pagination{
+  padding-bottom: 120px;
+  min-height: calc(100% - 50px);
+
+  li{
+    width: 40px;
+    height: 40px;
+    gap: 10px;
+  }
+  a{
+    line-height: 36px;
+    border-radius: 4px;
+    padding: 2px 13px;
+    display: block;
+    transition: 0.3s;
+    &:hover{
+      color: $white;
+      background: $black;
+    }
+  }
+}

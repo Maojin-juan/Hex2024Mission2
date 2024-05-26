@@ -1,0 +1,46 @@
+.footer{
+  background-size: cover;
+
+  &-link{
+    color: $nine-one-color;
+    &:hover{
+       color: $main-color;
+    }
+  }
+  .container{
+    padding: 80px 0;
+    font-size: 20px;
+    color: $main-color;
+  }
+}
+
+/* 廢案保留
+.circle{
+  z-index: -1;
+  left: -10%;
+  top: -10%;
+  width: 813px;
+  height: 813px;
+  border: 5px dashed rgba(217,217,217,0.6);
+  border-radius: 50%;
+}
+*/
+
+.contact{
+  width: 686px;
+  gap: 24px;
+}
+
+.sns{
+  width: 306px;
+  gap: 24px;
+
+  li{
+    gap: 8px;
+  }
+  a{
+    border-radius: 8px;
+    padding: 8px 24px;
+    font-weight: 700;
+  }
+}

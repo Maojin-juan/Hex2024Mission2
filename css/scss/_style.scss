@@ -1,0 +1,80 @@
+//-----------------------------定義-----------------------------
+
+$second-color: #f1f1f1;
+$nine-one-color: #919191;
+$c-one-color: #c1c1c1;
+$black: #000;
+$white: #fff;
+
+.card-radius{
+  border-radius: 8px;
+}
+.maw100p{
+  max-width: 100%;
+}
+.gap40{
+  gap: 40px;
+}
+
+//-------------------------------全域設定-------------------------------
+
+// *{
+//   outline: 1px solid black;
+// }
+
+body{
+  font-family: "Noto Sans TC","Noto Sans", sans-serif;
+  line-height: 1.5;
+}
+
+ul, ol{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+p{
+  margin: 0;
+}
+
+//-------------------------------navbar效果-------------------------------
+
+.nav-top{
+  background:
+  linear-gradient(to right, $nine-one-color 1px, transparent 1px) 0 0,
+  linear-gradient(to right, $nine-one-color 1px, transparent 1px) 0 100%,
+  linear-gradient(to left, $nine-one-color 1px, transparent 1px) 100% 0,
+  linear-gradient(to left, $nine-one-color 1px, transparent 1px) 100% 100%,
+  linear-gradient(to bottom, $nine-one-color 1px, transparent 1px) 0 0,
+  linear-gradient(to bottom, $nine-one-color 1px, transparent 1px) 100% 0,
+  linear-gradient(to top, $nine-one-color 1px, transparent 1px) 0 100%,
+  linear-gradient(to top, $nine-one-color 1px, transparent 1px) 100% 100%;
+  
+  font-weight: 600;
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+}
+
+//-------------------------------footer效果-------------------------------
+
+.pagination-enable{
+  color: $white;
+  background: $black;
+}
+.pagination-disable{
+  color: $black;
+}
+    
+.sns-enable{
+  color: $white;
+  background-color: $black;
+  border: 1px solid $black;
+  &:hover{
+  color: $white;
+  }
+}
+  
+.sns-disable{
+  background-color: $white;
+  border: 1px solid $c-one-color;
+}
