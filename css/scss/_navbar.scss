@@ -1,5 +1,8 @@
 .navbar{
+  background-color: $white;
   border-bottom: 1px solid $second-color;
+  max-width: 1920px;
+  padding: 0;
 
   li{
     transition: 0.2s;

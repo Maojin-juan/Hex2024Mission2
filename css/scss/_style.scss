@@ -3,8 +3,7 @@
 $second-color: #f1f1f1;
 $nine-one-color: #919191;
 $c-one-color: #c1c1c1;
-$black: #000;
-$white: #fff;
+$five-b-color: #5b5b5b;
 
 .card-radius{
   border-radius: 8px;
@@ -57,14 +56,6 @@ p{
 
 //-------------------------------footer效果-------------------------------
 
-.pagination-enable{
-  color: $white;
-  background: $black;
-}
-.pagination-disable{
-  color: $black;
-}
-    
 .sns-enable{
   color: $white;
   background-color: $black;
@@ -77,4 +68,14 @@ p{
 .sns-disable{
   background-color: $white;
   border: 1px solid $c-one-color;
+}
+
+//-------------------------------portfolio-pagination效果-------------------------------
+
+.pagination-enable{
+  color: $white;
+  background: $black;
+}
+.pagination-disable{
+  color: $black;
 }
