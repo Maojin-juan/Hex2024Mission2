@@ -10781,7 +10781,7 @@ p {
   background-color: #fff;
   border-bottom: 1px solid #f1f1f1;
   max-width: 1920px;
-  padding: 0;
+  padding: 32px 0;
 }
 .navbar li {
   transition: 0.2s;
@@ -10792,18 +10792,19 @@ p {
   background-repeat: no-repeat;
   background-size: 8px 8px;
 }
-.navbar .container {
+.navbar h1, .navbar .h1 {
+  font-size: 0;
+}
+.navbar header {
   gap: 568px;
-  height: 96px;
 }
 .navbar a {
   color: #000;
 }
 
-.site-logo {
-  padding: 22px 0;
+.nav-item {
+  white-space: nowrap;
 }
-
 .nav-pag {
   display: block;
   padding: 4px 8px;

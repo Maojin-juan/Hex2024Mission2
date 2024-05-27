@@ -16,19 +16,21 @@ html(lang="en")
 				h1.mb-0.position-absolute
 					a.navbar-brand.m-0.p-0(href="#")
 						img.site-logo(src="img/logo_svg/logo.svg", alt="logo")
+				button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarSupportedContent")
+					span.navbar-toggler-icon
 				#navbarSupportedContent.collapse.navbar-collapse.justify-content-center
 					ul.navbar-nav.gap40
-						li.nav-item 
-							a.nav-pag(aria-current="page" href="index.html") 首頁
 						li.nav-item.nav-top
-							a.nav-pag(href="#") 作品集
+							a.nav-pag(aria-current="page" href="index.html") 首頁
 						li.nav-item
-							a.nav-pag(href="#") 服務項目
+							a.nav-pag(aria-current="page" href="portfolio.html") 作品集
+						li.nav-item
+							a.nav-pag(aria-current="page" href="#") 服務項目
 						li.nav-item 
-							a.nav-pag(href="#") 部落格
+							a.nav-pag(aria-current="page" href="#") 部落格
 						li.nav-item
-							a.nav-pag(href="#") 關於我
-
+							a.nav-pag(aria-current="page" href="#") 關於我
+		
 		section.slogan-banner.d-flex.flex-column.align-items-center.text-center
 			.slogan.flex-column.position-relative
 				img.slogan-quote-l(src="img/quote/quote-left.png", alt="qute-left")
