@@ -1,4 +1,7 @@
 @media (max-width: 991.98px) {
+  .navbar-brand-wrapper {
+    left: 1rem; /* 与 container 一致的左边距 */
+  }
   .exp-list{
     flex-direction: column;
     gap: 20px;
@@ -54,5 +57,12 @@
 @media (min-width: 768px) {
   .footer{
     background-image: url(../img/footer/footer-bg-lg.png);
+  }
+}
+
+/* 調整大螢幕下的左邊距 */
+@media (min-width: 993px) {
+  .navbar-brand-wrapper {
+      left: 15px; /* 或根据需要调整 */
   }
 }

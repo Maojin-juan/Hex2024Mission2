@@ -1,13 +1,28 @@
 @charset "UTF-8";
 .navbar {
   position: relative;
+  padding: 32px 0;
+}
+
+.navbar-brand-wrapper {
+  position: absolute;
+  left: 15px;
+  /* 默认左边距 */
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.navbar-brand-wrapper h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
 }
 
 .navbar-brand {
-  position: absolute;
-  left: 15px;
-  /* 调整这个值以适应你的布局 */
-  transform: translateX(0);
+  display: inline-block;
 }
 
 .navbar-nav {
@@ -18,17 +33,17 @@
   margin-left: auto;
 }
 
-.visually-hidden {
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-  white-space: nowrap;
+/* 调整小屏幕下的左边距 */
+@media (max-width: 992px) {
+  .navbar-brand-wrapper {
+    left: 1rem;
+    /* 与 container 一致的左边距 */
+  }
 }
-
-.logo {
-  display: block;
+/* 调整大屏幕下的左边距 */
+@media (min-width: 993px) {
+  .navbar-brand-wrapper {
+    left: 15px;
+    /* 或根据需要调整 */
+  }
 }

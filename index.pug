@@ -11,23 +11,25 @@ html(lang="en")
 		link(rel="icon" href="img//icon/penguin-16.ico" type="image/x-icon")
 
 	body
-		nav.navbar.navbar-expand-lg.navbar-light
-			header.container.position-relative
-				h1.mb-0.position-absolute
-					a.navbar-brand.m-0.p-0(href="#")
-						img.site-logo(src="img/logo_svg/logo.svg", alt="logo")
-				#navbarSupportedContent.collapse.navbar-collapse.justify-content-center
+		nav.navbar.navbar-expand-lg.navbar-light.position-relative
+			.container.position-relative
+				h1.mb-0
+					a.navbar-brand(href="#")
+						img(src="img/logo_svg/logo.svg", alt="Logo")
+				button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarNav")
+					span.navbar-toggler-icon
+				#navbarNav.collapse.navbar-collapse.justify-content-center
 					ul.navbar-nav.gap40
+						li.nav-item
+							a.nav-link(href="#") 首頁
 						li.nav-item.nav-top
-							a.nav-pag(aria-current="page" href="index.html") 首頁
+							a.nav-link(href="#") 作品集
 						li.nav-item
-							a.nav-pag(aria-current="page" href="portfolio.html") 作品集
+							a.nav-link(href="#") 服務項目
 						li.nav-item
-							a.nav-pag(aria-current="page" href="#") 服務項目
-						li.nav-item 
-							a.nav-pag(aria-current="page" href="#") 部落格
+							a.nav-link(href="#") 部落格
 						li.nav-item
-							a.nav-pag(aria-current="page" href="#") 關於我
+							a.nav-link(href="#") 關於我
 
 		section.intro-banner.d-flex.justify-content-center.gap-4
 			.intro.d-flex.flex-column.justify-content-center
