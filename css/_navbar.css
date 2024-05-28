@@ -1,0 +1,34 @@
+@charset "UTF-8";
+.navbar {
+  position: relative;
+}
+
+.navbar-brand {
+  position: absolute;
+  left: 15px;
+  /* 调整这个值以适应你的布局 */
+  transform: translateX(0);
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+.navbar-toggler {
+  margin-left: auto;
+}
+
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap;
+}
+
+.logo {
+  display: block;
+}
