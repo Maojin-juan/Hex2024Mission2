@@ -121,13 +121,19 @@
   span{
     display: inline-block;/*跳行*/
     z-index: 0;
-    img{
-      background: none;
-      z-index: -1;
-      transform: translateX(-50%);
-      bottom: -3px;
-      left: 50%;
-    }
+  }
+  .underline {
+    position: relative;
+  }
+  .underline::after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/mark.png);
+    width: 148px;
+    height: 8px;
+    left: -15px;
+    bottom: 2px;
+    z-index: -1;
   }
   img{
     position: absolute;

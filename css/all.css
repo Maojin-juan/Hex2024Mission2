@@ -10792,14 +10792,14 @@ p {
   background-repeat: no-repeat;
   background-size: 8px 8px;
 }
-.navbar h1, .navbar .h1 {
-  font-size: 0;
-}
 .navbar header {
   gap: 568px;
 }
-.navbar a {
-  color: #000;
+.navbar h1, .navbar .h1 {
+  font-size: 0;
+}
+.navbar button {
+  padding: 4px 8px;
 }
 
 .nav-item {
@@ -10901,6 +10901,10 @@ p {
     background-image: url(../img/footer/footer-bg-lg.png);
   }
 }
+body {
+  outline: 1px solid gray;
+}
+
 .intro-banner {
   max-width: 1920px;
   margin: 0 auto;
@@ -11003,12 +11007,18 @@ p {
   /*跳行*/
   z-index: 0;
 }
-.slogan span img {
-  background: none;
+.slogan .underline {
+  position: relative;
+}
+.slogan .underline::after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/mark.png);
+  width: 148px;
+  height: 8px;
+  left: -15px;
+  bottom: 2px;
   z-index: -1;
-  transform: translateX(-50%);
-  bottom: -3px;
-  left: 50%;
 }
 .slogan img {
   position: absolute;
