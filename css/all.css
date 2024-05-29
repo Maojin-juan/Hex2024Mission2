@@ -10793,7 +10793,7 @@ p {
 }
 .navbar h1, .navbar .h1 {
   position: absolute;
-  /*絕對位置*/
+  /*讓h1不影響橫向排版*/
   font-size: 0;
   /*logo定位後精準把h1垂直置中的重要功臣*/
 }
