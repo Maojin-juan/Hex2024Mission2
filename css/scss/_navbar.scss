@@ -23,11 +23,8 @@
     }
   }
   h1{
-    font-size: 0;
-    position: absolute;
-    left: 15px; /* 默認左邊距 */
-    top: 50%;
-    transform: translateY(-50%);
+    position: absolute;/*絕對位置*/
+    font-size: 0;/*logo定位後精準把h1垂直置中的重要功臣*/
   }
   
   &-toggler{

@@ -10792,12 +10792,10 @@ p {
   background-size: 8px 8px;
 }
 .navbar h1, .navbar .h1 {
-  font-size: 0;
   position: absolute;
-  left: 15px;
-  /* 默認左邊距 */
-  top: 50%;
-  transform: translateY(-50%);
+  /*絕對位置*/
+  font-size: 0;
+  /*logo定位後精準把h1垂直置中的重要功臣*/
 }
 .navbar-toggler {
   margin-left: auto;
@@ -11107,15 +11105,13 @@ p {
   min-height: calc(100% - 50px);
 }
 .pagination li {
-  width: 40px;
-  height: 40px;
+  display: flex;
   gap: 10px;
 }
 .pagination a {
-  line-height: 36px;
   border-radius: 4px;
   padding: 2px 13px;
-  display: block;
+  line-height: 36px;
   transition: 0.3s;
 }
 .pagination a:hover {
