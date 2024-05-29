@@ -10793,7 +10793,7 @@ p {
 }
 .navbar h1, .navbar .h1 {
   position: absolute;
-  /*讓h1不影響橫向排版*/
+  /*讓h1不影響橫向排版可以浮在頁面之上*/
   font-size: 0;
   /*logo定位後精準把h1垂直置中的重要功臣*/
 }
@@ -10828,6 +10828,12 @@ p {
   border-radius: 50%;
 }
 */
+/*操縱單個項目的對齊，對齊的是文字底部*/
+/*自適應內容寬度*/
+.fit-content {
+  width: fit-content;
+}
+
 .contact {
   width: 686px;
   gap: 24px;
@@ -10849,7 +10855,7 @@ p {
 @media (max-width: 991.98px) {
   .navbar-brand-wrapper {
     left: 1rem;
-    /* 与 container 一致的左边距 */
+    /* 與 container 一致的左邊距 */
   }
 
   .exp-list {
@@ -10909,7 +10915,6 @@ p {
   }
 }
 .intro-banner {
-  max-width: 1920px;
   margin: 0 auto;
 }
 

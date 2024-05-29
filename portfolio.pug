@@ -23,9 +23,9 @@ html(lang="en")
 				#navbarNav.collapse.navbar-collapse.justify-content-center
 					ul.navbar-nav.gap40
 						li.nav-item
-							a.nav-link(href="#") 首頁
+							a.nav-link(href="index.html") 首頁
 						li.nav-item.nav-top
-							a.nav-link(href="#") 作品集
+							a.nav-link(href="portfolio.html") 作品集
 						li.nav-item
 							a.nav-link(href="#") 服務項目
 						li.nav-item
@@ -145,15 +145,15 @@ html(lang="en")
 
 		footer.footer
 			.container.d-flex.align-items-center.justify-content-between.gap40
-				.contact.row
+				.contact.d-flex.flex-column
 					//- 廢案保留span.circle.position-absolute
-					a.footer-link(href="#")
+					a.footer-link.fit-content(href="#")
 						img(src="img/logo_svg/logo.svg" alt="footer_logo")
-					p 若有數位產品設計和開發相關問題
+					p.fit-content 若有數位產品設計和開發相關問題
 						br
 						| 歡迎填寫表單，或直接與我聯絡！
-					
-					a.footer-link(href="mailto: service@hexschool.com" target="_blank") service@hexschool.com
+					a.footer-link.fit-content(href="mailto: service@hexschool.com" target="_blank") service@hexschool.com
+				
 				ul.sns.d-flex.flex-column
 					li
 						a.sns-enable.d-flex.align-items-center(href="#")

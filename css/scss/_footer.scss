@@ -23,6 +23,16 @@
 }
 */
 
+/*操縱單個項目的對齊，對齊的是文字底部*/
+// .baseline{
+//   align-self: baseline;
+// }
+
+/*自適應內容寬度*/
+.fit-content{
+  width: fit-content
+}
+
 .contact{
   width: 686px;
   gap: 24px;
