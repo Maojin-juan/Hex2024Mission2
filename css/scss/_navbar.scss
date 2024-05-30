@@ -2,7 +2,7 @@
   background-color: $white;
   border-bottom: 1px solid $second-color;
   padding: 32px 0;
-
+  
   li{
     transition: 0.2s;
 
@@ -22,18 +22,22 @@
       background-size: 8px 8px;
     }
   }
-  h1{
+
+  &-brand{
     position: absolute; /*讓h1不影響橫向排版可以浮在頁面之上*/
+    top: -4px;
     font-size: 0; /*logo定位後精準把h1垂直置中的重要功臣*/
   }
-  
+
   &-toggler{
+    padding: 1px;
     margin-left: auto;
+    border: none;
   }
 }
 
 .nav{
   &-link{
-    padding: 4px 8px;
+    padding: 4px 8px !important;
   }
 }
