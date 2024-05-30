@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>六角學院2024切版任務二</title>
     <link rel="stylesheet" href="css/all.css">
+    <script src="js/bootstrap.min.js"></script>
     <link rel="icon" type="image/png" size="16x16" href="img/icon/penguin-16.png">
     <link rel="icon" type="image/png" size="32x32" href="img/icon/penguin-32.png">
     <link rel="icon" href="img/icon/penguin-16.ico" type="image/x-icon">
-    <script src="js/bootstrap.min.js"></script>
   </head>
   <body>
     <html></html>
   </body>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
       <div class="container position-relative">
-        <h1 class="navbar-brand mb-0 p-0"><a href="#"><img src="img/logo_svg/logo.svg" alt="Logo"></a></h1>
+        <h1 class="navbar-brand mb-0 p-0"><a href="index.html"><img src="img/logo_svg/logo.svg" alt="Logo"></a></h1>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav align-items-center gap40">
@@ -45,9 +45,24 @@
         </div>
       </div>
     </section>
+    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
+            <button class="btn btn-primary" type="button">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <main class="portfolio d-flex flex-column container">
       <ul class="card-list row row-cols-lg-2">
-        <li class="card list-unstyled border-0 card-radius pb-5 gap-3"><img class="card-img-top card-radius" src="img/work/work-img1.png" alt="星際旅行訂票平台">
+        <li class="card list-unstyled border-0 card-radius pb-5 gap-3" type="button" data-bs-toggle="modal" data-bs-target="#Modal"><img class="card-img-top card-radius" src="img/work/work-img1.png" alt="星際旅行訂票平台">
           <div class="card-body d-flex flex-column gap-4">
             <div class="card-content d-flex flex-column gap-2">
               <h3 class="card-title">星際旅行訂票平台</h3>
@@ -60,7 +75,7 @@
             </ul>
           </div>
         </li>
-        <li class="card list-unstyled border-0 card-radius pb-5 gap-3"><img class="card-img-top card-radius" src="img/work/work-img2.png" alt="理財App">
+        <li class="card list-unstyled border-0 card-radius pb-5 gap-3" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><img class="card-img-top card-radius" src="img/work/work-img2.png" alt="理財App">
           <div class="card-body d-flex flex-column gap-4">
             <div class="card-content d-flex flex-column gap-2">
               <h3 class="card-title">理財App</h3>
@@ -73,7 +88,7 @@
             </ul>
           </div>
         </li>
-        <li class="card list-unstyled border-0 card-radius pb-5 gap-3"><img class="card-img-top card-radius maw100p" src="img/work/work-img3.png" alt="醫美診所官網">
+        <li class="card list-unstyled border-0 card-radius pb-5 gap-3" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><img class="card-img-top card-radius maw100p" src="img/work/work-img3.png" alt="醫美診所官網">
           <div class="card-body d-flex flex-column gap-4">
             <div class="card-content d-flex flex-column gap-2">
               <h3 class="card-title">醫美診所官網</h3>
@@ -86,7 +101,7 @@
             </ul>
           </div>
         </li>
-        <li class="card list-unstyled border-0 card-radius pb-5 gap-3"><img class="card-img-top card-radius maw100p" src="img/work/work-img4.png" alt="美美美早餐店POS機UI Design">
+        <li class="card list-unstyled border-0 card-radius pb-5 gap-3" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><img class="card-img-top card-radius maw100p" src="img/work/work-img4.png" alt="美美美早餐店POS機UI Design">
           <div class="card-body d-flex flex-column gap-4">
             <div class="card-content d-flex flex-column gap-2">
               <h3 class="card-title">美美美早餐店POS機UI Design</h3>
@@ -99,7 +114,7 @@
             </ul>
           </div>
         </li>
-        <li class="card list-unstyled border-0 card-radius pb-5 gap-3"><img class="card-img-top card-radius maw100p" src="img/work/work-img5.png" alt="電影院訂票系統">
+        <li class="card list-unstyled border-0 card-radius pb-5 gap-3" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><img class="card-img-top card-radius maw100p" src="img/work/work-img5.png" alt="電影院訂票系統">
           <div class="card-body d-flex flex-column gap-4">
             <div class="card-content d-flex flex-column gap-2">
               <h3 class="card-title">電影院訂票系統</h3>
@@ -112,7 +127,7 @@
             </ul>
           </div>
         </li>
-        <li class="card list-unstyled border-0 card-radius pb-5 gap-3"><img class="card-img-top card-radius maw100p" src="img/work/work-img6.png" alt="巧克巧克形象官網設計">
+        <li class="card list-unstyled border-0 card-radius pb-5 gap-3" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><img class="card-img-top card-radius maw100p" src="img/work/work-img6.png" alt="巧克巧克形象官網設計">
           <div class="card-body d-flex flex-column gap-4">
             <div class="card-content d-flex flex-column gap-2">
               <h3 class="card-title">巧克巧克形象官網設計</h3>

@@ -1,7 +1,22 @@
-@media (max-width: 991.98px) {
-  .navbar-brand-wrapper {
-    left: 1rem; /* 與 container 一致的左邊距 */
+@media (max-width: 1199.98px) {
+  .intro-banner{
+    flex-direction: column;
   }
+
+  .intro{
+    &-link{
+      justify-content: center;
+    }
+    &-content{
+      text-align: center;
+    }
+    &-hero-img img{
+      content: url(../img/hero/hero-sm.png)
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
   .exp-list{
     flex-direction: column;
     gap: 20px;
@@ -21,36 +36,10 @@
 }
 
 @media (max-width: 575.98px) {
-  
-  .intro-banner{
-    flex-direction: column;
-  }
-  .intro{
-    &-link{
-      justify-content: center;
-    }
-    &-content{
-      text-align: center;
-    }
-    &-hero-img img{
-      content: url(../img/hero/hero-sm.png)
-    }
-  }
-
   .exp-list{
    flex-direction: column;
    gap: 20px;
    padding: 0 32px;
-  }
-}
-
-@media (min-width: 576px) {
-  .intro{
-    margin-left: auto;
-
-    &-hero-img img{
-    content: url(../img/hero/hero-lg.png)
-    }
   }
 }
 
@@ -60,9 +49,12 @@
   }
 }
 
-/* 調整大螢幕下的左邊距 */
-@media (min-width: 993px) {
-  .navbar-brand-wrapper {
-      left: 15px; /* 或根据需要调整 */
+@media (min-width: 1200px) {
+  .intro{
+    margin-left: auto;
+
+    &-hero-img img{
+    content: url(../img/hero/hero-lg.png)
+    }
   }
 }

@@ -10778,7 +10778,7 @@ p {
 }
 
 .navbar {
-  background-color: #fff;
+  background-color: #ffffffac;
   border-bottom: 1px solid #f1f1f1;
   padding: 32px 0;
 }
@@ -10855,12 +10855,22 @@ p {
   font-weight: 700;
 }
 
-@media (max-width: 991.98px) {
-  .navbar-brand-wrapper {
-    left: 1rem;
-    /* 與 container 一致的左邊距 */
+@media (max-width: 1199.98px) {
+  .intro-banner {
+    flex-direction: column;
   }
 
+  .intro-link {
+    justify-content: center;
+  }
+  .intro-content {
+    text-align: center;
+  }
+  .intro-hero-img img {
+    content: url(../img/hero/hero-sm.png);
+  }
+}
+@media (max-width: 991.98px) {
   .exp-list {
     flex-direction: column;
     gap: 20px;
@@ -10877,32 +10887,10 @@ p {
   }
 }
 @media (max-width: 575.98px) {
-  .intro-banner {
-    flex-direction: column;
-  }
-
-  .intro-link {
-    justify-content: center;
-  }
-  .intro-content {
-    text-align: center;
-  }
-  .intro-hero-img img {
-    content: url(../img/hero/hero-sm.png);
-  }
-
   .exp-list {
     flex-direction: column;
     gap: 20px;
     padding: 0 32px;
-  }
-}
-@media (min-width: 576px) {
-  .intro {
-    margin-left: auto;
-  }
-  .intro-hero-img img {
-    content: url(../img/hero/hero-lg.png);
   }
 }
 @media (min-width: 768px) {
@@ -10910,11 +10898,12 @@ p {
     background-image: url(../img/footer/footer-bg-lg.png);
   }
 }
-/* 調整大螢幕下的左邊距 */
-@media (min-width: 993px) {
-  .navbar-brand-wrapper {
-    left: 15px;
-    /* 或根据需要调整 */
+@media (min-width: 1200px) {
+  .intro {
+    margin-left: auto;
+  }
+  .intro-hero-img img {
+    content: url(../img/hero/hero-lg.png);
   }
 }
 .intro-banner {
@@ -11076,7 +11065,6 @@ p {
   transition-duration: 0.5s;
 }
 .portfolio .card-img-top:hover {
-  cursor: pointer;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
