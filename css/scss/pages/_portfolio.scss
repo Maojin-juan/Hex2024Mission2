@@ -1,0 +1,141 @@
+//-------------------------------slogan-banner-------------------------------
+
+.slogan-banner{
+  background: #fafafa;
+  padding: 80px 0;
+}
+
+.slogan{
+  padding: 59px 71px;
+
+  p{
+    margin-bottom: 0;
+  }
+  span{
+    display: inline-block;/*跳行*/
+    z-index: 0;
+  }
+  .underline {
+    position: relative;
+  }
+  .underline::after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/mark.png);
+    width: 148px;
+    height: 8px;
+    left: -15px;
+    bottom: 2px;
+    z-index: -1;
+  }
+  img{
+    position: absolute;
+  }
+  &-quote-l{
+    top: 0;
+    left: 0;
+  }
+  &-quote-r{
+    bottom: 0;
+    right: 0;
+  }
+}
+
+//-------------------------------modal-------------------------------
+
+.modal{
+
+  &-dialog{
+    max-width: 1076px; 
+  }
+
+  &-title{
+  text-align: center;
+  }
+
+  &-content{
+    display: block;
+  }
+
+  h5{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+  }
+
+  p{
+    line-height: 24px;
+  }
+}
+
+//-------------------------------portfolio-------------------------------
+
+.portfolio{
+  margin: 120px auto 0;
+  gap: 72px;
+
+  .card{
+    &-img-top{
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border: 1px solid $second-color;
+      transition-duration: 0.5s;
+      &:hover{
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+    }
+    &-body{
+      padding: 0 16px;
+    }
+    &-title{
+      line-height: 1.2;
+      font-size: 28px;
+      font-weight: 700;
+      margin: 0;
+    }
+    &-text{
+      color: $nine-one-color;
+      font-weight: 400;
+    }
+    &-tags{
+  
+      li{
+        gap: 10px;
+        text-wrap: nowrap;
+      } 
+      a{
+        border-radius: 16px;
+        padding: 4px 12px;
+        background-color: $second-color;
+        transition-duration: 0.5s;
+        &:hover{
+          cursor: no-vertical-text;
+          color: $second-color;
+          background-color: $fontcolor-primary;
+        }
+      }
+    }
+  }
+}
+
+.pagination{
+  padding-bottom: 120px;
+  min-height: calc(100% - 50px);
+
+  li{
+    display: flex;
+    gap: 10px;
+  }
+  a{
+    border-radius: 4px;
+    padding: 2px 13px;
+    line-height: 36px;
+    transition: 0.3s;
+    &:hover{
+      color: $white;
+      background: $black;
+    }
+  }
+}

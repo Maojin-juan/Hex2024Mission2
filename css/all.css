@@ -10812,6 +10812,234 @@ p {
   padding: 4px 8px !important;
 }
 
+.intro-banner {
+  margin: 0 auto;
+}
+
+.intro {
+  gap: 60px;
+}
+.intro h3, .intro .h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.intro-info {
+  font-size: 20px;
+  color: #5b5b5b;
+}
+.intro-skill {
+  color: #c1c1c1;
+}
+.intro-hero-img img {
+  display: block;
+  width: 100%;
+}
+
+.product {
+  gap: 80px;
+}
+.product-title {
+  text-align: center;
+}
+.product-bg {
+  background-size: cover;
+}
+.product-work1 {
+  background-image: url(../img/homepage/homepage-work1-bg.png);
+}
+.product-work2 {
+  background-image: url(../img/homepage/homepage-work2-lg.png);
+}
+.product-work3 {
+  background-image: url(../img/homepage/homepage-work3-bg.png);
+}
+.product-full-intro {
+  max-width: 526px;
+  padding: 80px 40px 56px;
+}
+.product .card-img-top {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #f1f1f1;
+  transition-duration: 0.5s;
+}
+.product .card-img-top:hover {
+  cursor: pointer;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.product .card-body {
+  padding: 0 16px;
+}
+.product .card-title {
+  line-height: 1.2;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+.product .card-text {
+  color: #919191;
+  font-weight: 400;
+}
+.product .card-tags li {
+  gap: 10px;
+  text-wrap: nowrap;
+}
+.product .card-tags a {
+  border-radius: 16px;
+  padding: 4px 12px;
+  background-color: #f1f1f1;
+  transition-duration: 0.5s;
+}
+.product .card-tags a:hover {
+  color: #f1f1f1;
+  background-color: #3b3b3b;
+}
+
+.exp-list h6, .exp-list .h6 {
+  color: #5b5b5b;
+}
+.exp-list h6::before, .exp-list .h6::before {
+  content: "";
+  border-bottom: 2px solid #c1c1c1;
+  z-index: 2;
+  top: 25px;
+  left: 47%;
+  width: 24px;
+  position: absolute;
+}
+.exp-list p {
+  margin: 0;
+}
+
+.exp {
+  position: relative;
+  width: 300px;
+}
+
+.slogan-banner {
+  background: #fafafa;
+  padding: 80px 0;
+}
+
+.slogan {
+  padding: 59px 71px;
+}
+.slogan p {
+  margin-bottom: 0;
+}
+.slogan span {
+  display: inline-block;
+  /*跳行*/
+  z-index: 0;
+}
+.slogan .underline {
+  position: relative;
+}
+.slogan .underline::after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/mark.png);
+  width: 148px;
+  height: 8px;
+  left: -15px;
+  bottom: 2px;
+  z-index: -1;
+}
+.slogan img {
+  position: absolute;
+}
+.slogan-quote-l {
+  top: 0;
+  left: 0;
+}
+.slogan-quote-r {
+  bottom: 0;
+  right: 0;
+}
+
+.modal-dialog {
+  max-width: 1076px;
+}
+.modal-title {
+  text-align: center;
+}
+.modal-content {
+  display: block;
+}
+.modal h5, .modal .h5 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.6px;
+}
+.modal p {
+  line-height: 24px;
+}
+
+.portfolio {
+  margin: 120px auto 0;
+  gap: 72px;
+}
+.portfolio .card-img-top {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #f1f1f1;
+  transition-duration: 0.5s;
+}
+.portfolio .card-img-top:hover {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.portfolio .card-body {
+  padding: 0 16px;
+}
+.portfolio .card-title {
+  line-height: 1.2;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+.portfolio .card-text {
+  color: #919191;
+  font-weight: 400;
+}
+.portfolio .card-tags li {
+  gap: 10px;
+  text-wrap: nowrap;
+}
+.portfolio .card-tags a {
+  border-radius: 16px;
+  padding: 4px 12px;
+  background-color: #f1f1f1;
+  transition-duration: 0.5s;
+}
+.portfolio .card-tags a:hover {
+  cursor: no-vertical-text;
+  color: #f1f1f1;
+  background-color: #3b3b3b;
+}
+
+.pagination {
+  padding-bottom: 120px;
+  min-height: calc(100% - 50px);
+}
+.pagination li {
+  display: flex;
+  gap: 10px;
+}
+.pagination a {
+  border-radius: 4px;
+  padding: 2px 13px;
+  line-height: 36px;
+  transition: 0.3s;
+}
+.pagination a:hover {
+  color: #fff;
+  background: #000;
+}
+
 .footer {
   background-image: url(img/logo_svg/logo.svg);
   background-size: cover;
@@ -10902,231 +11130,4 @@ p {
   .intro {
     margin-left: auto;
   }
-}
-.intro-banner {
-  margin: 0 auto;
-}
-
-.intro {
-  gap: 60px;
-}
-.intro h3, .intro .h3 {
-  font-size: 40px;
-  font-weight: 600;
-}
-.intro-info {
-  font-size: 20px;
-  color: #5b5b5b;
-}
-.intro-skill {
-  color: #c1c1c1;
-}
-.intro-hero-img img {
-  display: block;
-  width: 100%;
-}
-
-.product {
-  gap: 80px;
-}
-.product-title {
-  text-align: center;
-}
-.product-bg {
-  background-size: cover;
-}
-.product-work1 {
-  background-image: url(../img/homepage/homepage-work1-bg.png);
-}
-.product-work2 {
-  background-image: url(../img/homepage/homepage-work2-lg.png);
-}
-.product-work3 {
-  background-image: url(../img/homepage/homepage-work3-bg.png);
-}
-.product-full-intro {
-  max-width: 526px;
-  padding: 80px 40px 56px;
-}
-.product .card-img-top {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border: 1px solid #f1f1f1;
-  transition-duration: 0.5s;
-}
-.product .card-img-top:hover {
-  cursor: pointer;
-  border: none;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.product .card-body {
-  padding: 0 16px;
-}
-.product .card-title {
-  line-height: 1.2;
-  font-size: 28px;
-  font-weight: 700;
-  margin: 0;
-}
-.product .card-text {
-  color: #919191;
-  font-weight: 400;
-}
-.product .card-tags li {
-  gap: 10px;
-  text-wrap: nowrap;
-}
-.product .card-tags a {
-  border-radius: 16px;
-  padding: 4px 12px;
-  background-color: #f1f1f1;
-  transition-duration: 0.5s;
-}
-.product .card-tags a:hover {
-  color: #f1f1f1;
-  background-color: #3b3b3b;
-}
-
-.slogan-banner {
-  background: #fafafa;
-  padding: 80px 0;
-}
-
-.slogan {
-  padding: 59px 71px;
-}
-.slogan p {
-  margin-bottom: 0;
-}
-.slogan span {
-  display: inline-block;
-  /*跳行*/
-  z-index: 0;
-}
-.slogan .underline {
-  position: relative;
-}
-.slogan .underline::after {
-  position: absolute;
-  content: "";
-  background-image: url(../img/mark.png);
-  width: 148px;
-  height: 8px;
-  left: -15px;
-  bottom: 2px;
-  z-index: -1;
-}
-.slogan img {
-  position: absolute;
-}
-.slogan-quote-l {
-  top: 0;
-  left: 0;
-}
-.slogan-quote-r {
-  bottom: 0;
-  right: 0;
-}
-
-.exp-list h6, .exp-list .h6 {
-  color: #5b5b5b;
-}
-.exp-list h6::before, .exp-list .h6::before {
-  content: "";
-  border-bottom: 2px solid #c1c1c1;
-  z-index: 2;
-  top: 25px;
-  left: 47%;
-  width: 24px;
-  position: absolute;
-}
-.exp-list p {
-  margin: 0;
-}
-
-.exp {
-  position: relative;
-  width: 300px;
-}
-
-.modal-dialog {
-  max-width: 1076px;
-}
-.modal-title {
-  text-align: center;
-}
-.modal-content {
-  display: block;
-}
-.modal h5, .modal .h5 {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 33.6px;
-}
-.modal p {
-  line-height: 24px;
-}
-
-.portfolio {
-  margin: 120px auto 0;
-  gap: 72px;
-}
-.portfolio .card-img-top {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border: 1px solid #f1f1f1;
-  transition-duration: 0.5s;
-}
-.portfolio .card-img-top:hover {
-  border: none;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.portfolio .card-body {
-  padding: 0 16px;
-}
-.portfolio .card-title {
-  line-height: 1.2;
-  font-size: 28px;
-  font-weight: 700;
-  margin: 0;
-}
-.portfolio .card-text {
-  color: #919191;
-  font-weight: 400;
-}
-.portfolio .card-tags li {
-  gap: 10px;
-  text-wrap: nowrap;
-}
-.portfolio .card-tags a {
-  border-radius: 16px;
-  padding: 4px 12px;
-  background-color: #f1f1f1;
-  transition-duration: 0.5s;
-}
-.portfolio .card-tags a:hover {
-  cursor: no-vertical-text;
-  color: #f1f1f1;
-  background-color: #3b3b3b;
-}
-
-.pagination {
-  padding-bottom: 120px;
-  min-height: calc(100% - 50px);
-}
-.pagination li {
-  display: flex;
-  gap: 10px;
-}
-.pagination a {
-  border-radius: 4px;
-  padding: 2px 13px;
-  line-height: 36px;
-  transition: 0.3s;
-}
-.pagination a:hover {
-  color: #fff;
-  background: #000;
 }

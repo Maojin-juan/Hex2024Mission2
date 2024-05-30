@@ -1,0 +1,118 @@
+//-------------------------------intro-banner-------------------------------
+
+.intro-banner{
+  margin: 0 auto;
+}
+
+.intro{
+  gap: 60px;
+
+  h3{
+    font-size: 40px;
+    font-weight: 600;
+  }
+  &-info{
+    font-size: 20px;
+    color: $five-b-color;
+  }
+  &-skill{
+    color: $c-one-color;
+  }
+  &-hero-img img{
+    display: block;
+    width: 100%;
+  }
+}
+
+//-------------------------------product-------------------------------
+
+.product{
+  gap: 80px;
+
+  &-title{
+    text-align: center;
+  }
+  &-bg{
+    background-size: cover;
+  }
+  &-work1{
+    background-image: url(../img/homepage/homepage-work1-bg.png);
+  }
+  &-work2{
+    background-image: url(../img/homepage/homepage-work2-lg.png);
+  }
+  &-work3{
+    background-image: url(../img/homepage/homepage-work3-bg.png);
+  }
+  &-full-intro{
+    max-width: 526px;
+    padding: 80px 40px 56px;
+  }
+  .card{
+    &-img-top{
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border: 1px solid $second-color;
+      transition-duration: 0.5s;
+      &:hover{
+        cursor: pointer;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+    }
+    &-body{
+      padding: 0 16px;
+    }
+    &-title{
+      line-height: 1.2;
+      font-size: 28px;
+      font-weight: 700;
+      margin: 0;
+    }
+    &-text{
+      color: $nine-one-color;
+      font-weight: 400;
+    }
+    &-tags{
+  
+      li{
+        gap: 10px;
+        text-wrap: nowrap;
+      } 
+      a{
+        border-radius: 16px;
+        padding: 4px 12px;
+        background-color: $second-color;
+        transition-duration: 0.5s;
+        &:hover{
+          color: $second-color;
+          background-color: $fontcolor-primary;
+        }
+      }
+    }
+  }
+}
+
+.exp-list{
+  h6{
+    color: $five-b-color;
+    &::before{
+      content: "";
+      border-bottom: 2px solid $c-one-color;
+      z-index: 2;
+      top: 25px;
+      left: 47%;
+      width: 24px;
+      position: absolute;
+    }
+  }
+  p{
+    margin: 0;
+  }
+}
+
+.exp{
+  position: relative;
+  width: 300px;
+}
