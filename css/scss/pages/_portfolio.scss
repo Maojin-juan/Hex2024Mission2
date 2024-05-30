@@ -15,18 +15,9 @@
     display: inline-block;/*跳行*/
     z-index: 0;
   }
-  .underline {
-    position: relative;
-  }
   .underline::after {
-    position: absolute;
-    content: "";
-    background-image: url(../img/mark.png);
-    width: 148px;
-    height: 8px;
     left: -15px;
     bottom: 2px;
-    z-index: -1;
   }
   img{
     position: absolute;
@@ -120,6 +111,8 @@
   }
 }
 
+//-------------------------------pagination-------------------------------
+
 .pagination{
   padding-bottom: 120px;
   min-height: calc(100% - 50px);
@@ -137,5 +130,14 @@
       color: $white;
       background: $black;
     }
+  }
+
+  &-enable{
+    color: $white;
+    background: $black;
+  }
+
+  &-disable{
+    color: $black;
   }
 }

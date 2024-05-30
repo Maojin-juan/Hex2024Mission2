@@ -37,4 +37,18 @@
     padding: 8px 24px;
     font-weight: 700;
   }
+
+  &-enable{
+    color: $white;
+    background-color: $black;
+    border: 1px solid $black;
+    &:hover{
+    color: $white;
+    }
+  }
+
+  &-disable{
+    background-color: $white;
+    border: 1px solid $c-one-color;
+  }
 }

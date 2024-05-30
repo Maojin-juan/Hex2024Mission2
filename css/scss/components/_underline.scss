@@ -1,0 +1,11 @@
+.underline {
+  position: relative;
+}
+.underline::after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/mark.png);
+  width: 148px;
+  height: 8px;
+  z-index: -1;
+}

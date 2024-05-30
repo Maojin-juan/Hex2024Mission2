@@ -10736,6 +10736,7 @@ textarea.form-control-lg {
   border: none;
 }
 
+/*外框檢查*/
 body {
   font-family: "Noto Sans TC", "Noto Sans", sans-serif;
   line-height: 1.5;
@@ -10751,34 +10752,17 @@ p {
   margin: 0;
 }
 
-.nav-top {
-  background: linear-gradient(to right, #919191 1px, transparent 1px) 0 0, linear-gradient(to right, #919191 1px, transparent 1px) 0 100%, linear-gradient(to left, #919191 1px, transparent 1px) 100% 0, linear-gradient(to left, #919191 1px, transparent 1px) 100% 100%, linear-gradient(to bottom, #919191 1px, transparent 1px) 0 0, linear-gradient(to bottom, #919191 1px, transparent 1px) 100% 0, linear-gradient(to top, #919191 1px, transparent 1px) 0 100%, linear-gradient(to top, #919191 1px, transparent 1px) 100% 100%;
-  font-weight: 600;
-  background-repeat: no-repeat;
-  background-size: 8px 8px;
+.underline {
+  position: relative;
 }
 
-.sns-enable {
-  color: #fff;
-  background-color: #000;
-  border: 1px solid #000;
-}
-.sns-enable:hover {
-  color: #fff;
-}
-
-.sns-disable {
-  background-color: #fff;
-  border: 1px solid #c1c1c1;
-}
-
-.pagination-enable {
-  color: #fff;
-  background: #000;
-}
-
-.pagination-disable {
-  color: #000;
+.underline::after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/mark.png);
+  width: 148px;
+  height: 8px;
+  z-index: -1;
 }
 
 .navbar {
@@ -10810,6 +10794,12 @@ p {
 
 .nav-link {
   padding: 4px 8px !important;
+}
+.nav-top {
+  background: linear-gradient(to right, #919191 1px, transparent 1px) 0 0, linear-gradient(to right, #919191 1px, transparent 1px) 0 100%, linear-gradient(to left, #919191 1px, transparent 1px) 100% 0, linear-gradient(to left, #919191 1px, transparent 1px) 100% 100%, linear-gradient(to bottom, #919191 1px, transparent 1px) 0 0, linear-gradient(to bottom, #919191 1px, transparent 1px) 100% 0, linear-gradient(to top, #919191 1px, transparent 1px) 0 100%, linear-gradient(to top, #919191 1px, transparent 1px) 100% 100%;
+  font-weight: 600;
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
 }
 
 .intro-banner {
@@ -10934,18 +10924,9 @@ p {
   /*跳行*/
   z-index: 0;
 }
-.slogan .underline {
-  position: relative;
-}
 .slogan .underline::after {
-  position: absolute;
-  content: "";
-  background-image: url(../img/mark.png);
-  width: 148px;
-  height: 8px;
   left: -15px;
   bottom: 2px;
-  z-index: -1;
 }
 .slogan img {
   position: absolute;
@@ -11039,6 +11020,13 @@ p {
   color: #fff;
   background: #000;
 }
+.pagination-enable {
+  color: #fff;
+  background: #000;
+}
+.pagination-disable {
+  color: #000;
+}
 
 .footer {
   background-image: url(img/logo_svg/logo.svg);
@@ -11073,6 +11061,18 @@ p {
   border-radius: 8px;
   padding: 8px 24px;
   font-weight: 700;
+}
+.sns-enable {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+}
+.sns-enable:hover {
+  color: #fff;
+}
+.sns-disable {
+  background-color: #fff;
+  border: 1px solid #c1c1c1;
 }
 
 @media (max-width: 1199.98px) {

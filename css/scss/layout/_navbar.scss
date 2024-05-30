@@ -40,4 +40,20 @@
   &-link{
     padding: 4px 8px !important;
   }
+
+  &-top{
+    background:
+    linear-gradient(to right, $nine-one-color 1px, transparent 1px) 0 0,
+    linear-gradient(to right, $nine-one-color 1px, transparent 1px) 0 100%,
+    linear-gradient(to left, $nine-one-color 1px, transparent 1px) 100% 0,
+    linear-gradient(to left, $nine-one-color 1px, transparent 1px) 100% 100%,
+    linear-gradient(to bottom, $nine-one-color 1px, transparent 1px) 0 0,
+    linear-gradient(to bottom, $nine-one-color 1px, transparent 1px) 100% 0,
+    linear-gradient(to top, $nine-one-color 1px, transparent 1px) 0 100%,
+    linear-gradient(to top, $nine-one-color 1px, transparent 1px) 100% 100%;
+    
+    font-weight: 600;
+    background-repeat: no-repeat;
+    background-size: 8px 8px;
+  }
 }
