@@ -11,13 +11,27 @@
     font-size: 40px;
     font-weight: 600;
   }
+
   &-info{
     font-size: 20px;
     color: $five-b-color;
   }
+
+  &-main{
+    display: flex;
+    flex-wrap: wrap;
+
+    .underline-f2e::after{
+      background-size: 119px 8px;
+      background-repeat: no-repeat;
+      left: -10px;
+    }
+  }
+
   &-skill{
     color: $c-one-color;
   }
+
   &-hero-img img{
     display: block;
     width: 100%;

@@ -11,21 +11,16 @@
   p{
     margin-bottom: 0;
   }
-  span{
-    display: inline-block;/*跳行*/
-    z-index: 0;
-  }
-  .underline::after {
-    left: -15px;
-    bottom: 2px;
-  }
+
   img{
     position: absolute;
   }
+
   &-quote-l{
     top: 0;
     left: 0;
   }
+  
   &-quote-r{
     bottom: 0;
     right: 0;

@@ -10753,7 +10753,9 @@ p {
 }
 
 .underline {
-  position: relative;
+  display: inline-block;
+  /*跳行*/
+  z-index: 0;
 }
 
 .underline::after {
@@ -10763,6 +10765,8 @@ p {
   width: 148px;
   height: 8px;
   z-index: -1;
+  left: -15px;
+  bottom: 2px;
 }
 
 .navbar {
@@ -10816,6 +10820,15 @@ p {
 .intro-info {
   font-size: 20px;
   color: #5b5b5b;
+}
+.intro-main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.intro-main .underline-f2e::after {
+  background-size: 119px 8px;
+  background-repeat: no-repeat;
+  left: -10px;
 }
 .intro-skill {
   color: #c1c1c1;
@@ -10918,15 +10931,6 @@ p {
 }
 .slogan p {
   margin-bottom: 0;
-}
-.slogan span {
-  display: inline-block;
-  /*跳行*/
-  z-index: 0;
-}
-.slogan .underline::after {
-  left: -15px;
-  bottom: 2px;
 }
 .slogan img {
   position: absolute;

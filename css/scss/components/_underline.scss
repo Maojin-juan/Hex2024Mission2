@@ -1,6 +1,8 @@
 .underline {
-  position: relative;
+  display: inline-block;/*跳行*/
+  z-index: 0;
 }
+
 .underline::after {
   position: absolute;
   content: "";
@@ -8,4 +10,6 @@
   width: 148px;
   height: 8px;
   z-index: -1;
+  left: -15px;
+  bottom: 2px;
 }
