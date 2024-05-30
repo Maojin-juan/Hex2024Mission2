@@ -212,6 +212,7 @@
         background-color: $second-color;
         transition-duration: 0.5s;
         &:hover{
+          cursor: no-vertical-text;
           color: $second-color;
           background-color: $fontcolor-primary;
         }
