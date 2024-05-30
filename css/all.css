@@ -10732,6 +10732,10 @@ textarea.form-control-lg {
   gap: 40px;
 }
 
+.border-none {
+  border: none;
+}
+
 body {
   font-family: "Noto Sans TC", "Noto Sans", sans-serif;
   line-height: 1.5;
@@ -10820,17 +10824,6 @@ p {
   font-size: 20px;
 }
 
-/* 廢案保留
-.circle{
-  z-index: -1;
-  left: -10%;
-  top: -10%;
-  width: 813px;
-  height: 813px;
-  border: 5px dashed rgba(217,217,217,0.6);
-  border-radius: 50%;
-}
-*/
 /*操縱單個項目的對齊，對齊的是文字底部*/
 /*自適應內容寬度*/
 .fit-content {
@@ -10838,7 +10831,6 @@ p {
 }
 
 .contact {
-  width: 686px;
   gap: 24px;
 }
 
@@ -10857,7 +10849,7 @@ p {
 
 @media (max-width: 1199.98px) {
   .intro-banner {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .intro-link {
@@ -10865,9 +10857,6 @@ p {
   }
   .intro-content {
     text-align: center;
-  }
-  .intro-hero-img img {
-    content: url(../img/hero/hero-sm.png);
   }
 }
 @media (max-width: 991.98px) {
@@ -10883,14 +10872,25 @@ p {
   }
   .footer .container {
     flex-direction: column;
-    text-align: center;
+  }
+  .footer .contact {
+    align-items: center;
   }
 }
 @media (max-width: 575.98px) {
+  .intro-hero-img img {
+    content: url(../img/hero/hero-sm.png);
+  }
+
   .exp-list {
     flex-direction: column;
     gap: 20px;
     padding: 0 32px;
+  }
+}
+@media (min-width: 576px) {
+  .intro-hero-img img {
+    content: url(../img/hero/hero-lg.png);
   }
 }
 @media (min-width: 768px) {
@@ -10901,9 +10901,6 @@ p {
 @media (min-width: 1200px) {
   .intro {
     margin-left: auto;
-  }
-  .intro-hero-img img {
-    content: url(../img/hero/hero-lg.png);
   }
 }
 .intro-banner {
@@ -11051,6 +11048,24 @@ p {
 .exp {
   position: relative;
   width: 300px;
+}
+
+.modal-dialog {
+  max-width: 1076px;
+}
+.modal-title {
+  text-align: center;
+}
+.modal-content {
+  display: block;
+}
+.modal h5, .modal .h5 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.6px;
+}
+.modal p {
+  line-height: 24px;
 }
 
 .portfolio {

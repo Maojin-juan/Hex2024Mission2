@@ -53,14 +53,19 @@ html(lang="en")
 		#Modal.modal.fade(tabindex="-1", aria-labelledby="exampleModalLabel", aria-hidden="true")
 			.modal-dialog
 				.modal-content
-					.modal-header
-						h5#exampleModalLabel.modal-title Modal title
+					.modal-header.gap-2.border-none
 						button.btn-close(type="button", data-bs-dismiss="modal", aria-label="Close")
-					.modal-body
-						| ...
-					.modal-footer
-						button.btn.btn-secondary(type="button", data-bs-dismiss="modal") Close
-						button.btn.btn-primary(type="button") Save changes
+					section.modal-body
+						.modal-title.d-flex.flex-column.gap-2
+							h5#ModalLabel.mb-0 星際旅行訂票平台
+							p 悠遊宇宙的夢想，從這裡開始實現
+						.modal-intro.d-flex.border-none
+							p.modal-main STAR TRAVEL 為 KK 公司宇宙旅行的購票網站。
+								br.modal-main-br
+								| 主要從地球出發，目的地包含月球、火星、水星、木星；未來太空轉運站建置完畢，將再擴增目的地土星和金星。
+							p.modal-design 設計原則：宇宙旅行、深色背景、強烈視覺效果
+								br
+								| 開發方式：Bootstrap、Javascript、RWD
 
 		main.portfolio.d-flex.flex-column.container
 			ul.card-list.row.row-cols-lg-2

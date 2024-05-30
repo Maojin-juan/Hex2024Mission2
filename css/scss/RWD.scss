@@ -1,6 +1,6 @@
 @media (max-width: 1199.98px) {
   .intro-banner{
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .intro{
@@ -9,9 +9,6 @@
     }
     &-content{
       text-align: center;
-    }
-    &-hero-img img{
-      content: url(../img/hero/hero-sm.png)
     }
   }
 }
@@ -30,16 +27,29 @@
 
     .container{
       flex-direction: column;
-      text-align: center;
+    }
+
+    .contact{
+      align-items: center;
     }
   }
 }
 
 @media (max-width: 575.98px) {
+  .intro-hero-img img{
+    content: url(../img/hero/hero-sm.png)
+  }
+  
   .exp-list{
    flex-direction: column;
    gap: 20px;
    padding: 0 32px;
+  }
+}
+
+@media (min-width: 576px) {
+  .intro-hero-img img{
+    content: url(../img/hero/hero-lg.png)
   }
 }
 
@@ -52,9 +62,5 @@
 @media (min-width: 1200px) {
   .intro{
     margin-left: auto;
-
-    &-hero-img img{
-    content: url(../img/hero/hero-lg.png)
-    }
   }
 }

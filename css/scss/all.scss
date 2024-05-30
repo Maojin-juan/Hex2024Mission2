@@ -168,6 +168,32 @@
   position: relative;
   width: 300px;
 }
+//-------------------------------portfolio-modal-------------------------------
+
+.modal{
+
+  &-dialog{
+    max-width: 1076px; 
+  }
+
+  &-title{
+  text-align: center;
+  }
+
+  &-content{
+    display: block;
+  }
+
+  h5{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+  }
+
+  p{
+    line-height: 24px;
+  }
+}
 
 //-------------------------------portfolio-------------------------------
 
