@@ -10813,6 +10813,9 @@ p {
   font-size: 40px;
   font-weight: 600;
 }
+.intro-content {
+  text-align: center;
+}
 .intro-info {
   font-size: 20px;
   color: #5b5b5b;
