@@ -1,0 +1,28 @@
+@charset "UTF-8";
+.card-radius {
+  border-radius: 8px;
+}
+
+.border-none {
+  border: none;
+}
+
+.gap40 {
+  gap: 40px;
+}
+
+/*外框檢查*/
+body {
+  font-family: "Noto Sans TC", "Noto Sans", sans-serif;
+  line-height: 1.5;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}

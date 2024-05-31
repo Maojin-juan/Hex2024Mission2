@@ -10724,16 +10724,12 @@ textarea.form-control-lg {
   border-radius: 8px;
 }
 
-.maw100p {
-  max-width: 100%;
+.border-none {
+  border: none;
 }
 
 .gap40 {
   gap: 40px;
-}
-
-.border-none {
-  border: none;
 }
 
 /*外框檢查*/
@@ -10821,10 +10817,6 @@ p {
   font-size: 20px;
   color: #5b5b5b;
 }
-.intro-main {
-  display: flex;
-  flex-wrap: wrap;
-}
 .intro-main .underline-f2e::after {
   background-size: 119px 8px;
   background-repeat: no-repeat;
@@ -10860,66 +10852,6 @@ p {
   max-width: 526px;
   padding: 80px 40px 56px;
 }
-.product .card-img-top {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border: 1px solid #f1f1f1;
-  transition-duration: 0.5s;
-}
-.product .card-img-top:hover {
-  cursor: pointer;
-  border: none;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.product .card-body {
-  padding: 0 16px;
-}
-.product .card-title {
-  line-height: 1.2;
-  font-size: 28px;
-  font-weight: 700;
-  margin: 0;
-}
-.product .card-text {
-  color: #919191;
-  font-weight: 400;
-}
-.product .card-tags li {
-  gap: 10px;
-  text-wrap: nowrap;
-}
-.product .card-tags a {
-  border-radius: 16px;
-  padding: 4px 12px;
-  background-color: #f1f1f1;
-  transition-duration: 0.5s;
-}
-.product .card-tags a:hover {
-  color: #f1f1f1;
-  background-color: #3b3b3b;
-}
-
-.exp-list h6, .exp-list .h6 {
-  color: #5b5b5b;
-}
-.exp-list h6::before, .exp-list .h6::before {
-  content: "";
-  border-bottom: 2px solid #c1c1c1;
-  z-index: 2;
-  top: 25px;
-  left: 47%;
-  width: 24px;
-  position: absolute;
-}
-.exp-list p {
-  margin: 0;
-}
-
-.exp {
-  position: relative;
-  width: 300px;
-}
 
 .slogan-banner {
   background: #fafafa;
@@ -10942,6 +10874,27 @@ p {
 .slogan-quote-r {
   bottom: 0;
   right: 0;
+}
+
+.exp-list h6, .exp-list .h6 {
+  color: #5b5b5b;
+}
+.exp-list h6::before, .exp-list .h6::before {
+  content: "";
+  border-bottom: 2px solid #c1c1c1;
+  z-index: 2;
+  top: 25px;
+  left: 47%;
+  width: 24px;
+  position: absolute;
+}
+.exp-list p {
+  margin: 0;
+}
+
+.exp {
+  position: relative;
+  width: 300px;
 }
 
 .modal-dialog {

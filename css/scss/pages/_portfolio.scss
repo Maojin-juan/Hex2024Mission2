@@ -27,6 +27,29 @@
   }
 }
 
+.exp-list{
+  h6{
+    color: $five-b-color;
+    &::before{
+      content: "";
+      border-bottom: 2px solid $c-one-color;
+      z-index: 2;
+      top: 25px;
+      left: 47%;
+      width: 24px;
+      position: absolute;
+    }
+  }
+  p{
+    margin: 0;
+  }
+}
+
+.exp{
+  position: relative;
+  width: 300px;
+}
+
 //-------------------------------modal-------------------------------
 
 .modal{
