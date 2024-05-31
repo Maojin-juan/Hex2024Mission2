@@ -59,14 +59,14 @@ html(lang="en")
 				img(alt="hero-img")
 
 		main.product.d-flex.flex-column
-			h3.product-title.d-flex.justify-content-center.gap-3 作品介紹
+			h3.product-title.d-flex.justify-content-center.mb-0.gap-3 作品介紹
 			article.product-work1.product-bg.d-flex
-				img(src="img/homepage/homepage-work1.png", alt="星際旅行平台")
-				.product-full-intro.intro1.card.card-radius.gap40
+				.product-startravel
+					img(src="img/homepage/homepage-work1.png", alt="星際旅行平台")
+				.product-full-intro.full-intro1.card.gap40
 					.card-body.d-flex.flex-column.gap-4
-						.card-content.d-flex.flex-column.gap-2
-							h3.card-title 星際旅行訂票平台
-							p.card-text 悠遊宇宙的夢想，從這裡開始實現
+						h3.card-title.mb-0 星際旅行訂票平台
+						p.card-text 悠遊宇宙的夢想，從這裡開始實現
 						ul.card-tags.d-flex.flex-wrap.gap-3
 							li.list-unstyled 
 								a(href="#") 網頁設計
@@ -74,26 +74,32 @@ html(lang="en")
 								a(href="#") 響應式設計
 							li.list-unstyled
 								a(href="#") Bootstrap
+					button.btn.btn-dark.d-flex.align-items-center.gap-2 完整介紹
+						img(src="img/logo_svg/arrow.svg", alt="full_intro")
+
 			article.product-work2.product-bg.d-flex
-				.product-full-intro.intro2.card.card-radius.gap40
-					.card-body.d-flex.flex-column.gap-4
-						.card-content.d-flex.flex-column.gap-2
+				.product-work2-overlay.d-flex.justify-centent-end.align-items-center.position-relative
+					.product-full-intro.full-intro2.card.gap40
+						.card-body.d-flex.flex-column.gap-4
 							h3.card-title 星際旅行訂票平台
 							p.card-text 悠遊宇宙的夢想，從這裡開始實現
-						ul.card-tags.d-flex.flex-wrap.gap-3
-							li.list-unstyled 
-								a(href="#") 網頁設計
-							li.list-unstyled
-								a(href="#") 響應式設計
-							li.list-unstyled
-								a(href="#") Bootstrap
+							ul.card-tags.d-flex.flex-wrap.gap-3
+								li.list-unstyled 
+									a(href="#") 網頁設計
+								li.list-unstyled
+									a(href="#") 響應式設計
+								li.list-unstyled
+									a(href="#") Bootstrap
+						button.btn.btn-dark.d-flex.align-items-center.gap-2 完整介紹
+							img(src="img/logo_svg/arrow.svg", alt="full_intro")
+
 			article.product-work3.product-bg.d-flex
-				img(src="img/homepage/homepage-work3.png", alt="醫美診所官網")
-				.product-full-intro.intro3.card.card-radius.gap40
+				.product-aesthetic
+					img(src="img/homepage/homepage-work3.png", alt="醫美診所官網")
+				.product-full-intro.full-intro3.card.gap40
 					.card-body.d-flex.flex-column.gap-4
-						.card-content.d-flex.flex-column.gap-2
-							h3.card-title 星際旅行訂票平台
-							p.card-text 悠遊宇宙的夢想，從這裡開始實現
+						h3.card-title 星際旅行訂票平台
+						p.card-text 悠遊宇宙的夢想，從這裡開始實現
 						ul.card-tags.d-flex.flex-wrap.gap-3
 							li.list-unstyled 
 								a(href="#") 網頁設計
@@ -101,6 +107,8 @@ html(lang="en")
 								a(href="#") 響應式設計
 							li.list-unstyled
 								a(href="#") Bootstrap
+					button.btn.btn-dark.d-flex.align-items-center.gap-2 完整介紹
+						img(src="img/logo_svg/arrow.svg", alt="full_intro")
 
 		footer.footer
 			.container.d-flex.align-items-center.justify-content-between.gap40

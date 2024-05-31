@@ -11,7 +11,7 @@
     font-size: 40px;
     font-weight: 600;
   }
-  
+
   &-info{
     font-size: 20px;
     color: $five-b-color;
@@ -39,6 +39,11 @@
 
 .product{
   gap: 80px;
+  padding: 120px 0 0;
+
+  img{
+    display: block;
+  }
 
   &-title{
     text-align: center;
@@ -51,12 +56,45 @@
   }
   &-work2{
     background-image: url(../img/homepage/homepage-work2-lg.png);
+    
+    &-overlay{
+      background-color: #0a101380;
+      max-width: 50%;
+      height: inherit;
+      padding: 0 110px 0 24px;
+    }
   }
   &-work3{
     background-image: url(../img/homepage/homepage-work3-bg.png);
   }
   &-full-intro{
-    max-width: 526px;
+    width: 526px;
     padding: 80px 40px 56px;
+    background-color: #ffffff1a;
+    backdrop-filter: blur(5px);
+  }
+
+  .card{
+    border-radius: 24px;
+    color: $white;
+    
+    &-body{
+      border-bottom: 1px solid $second-color;
+      padding-bottom: 40px;
+    }
+
+    &-tags a{
+      background-color: $white;
+    }
+
+    button{
+      width: fit-content;
+      padding: 16px 32px;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 30px;
+      margin: 0 auto;
+    }
   }
 }

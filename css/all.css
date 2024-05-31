@@ -10773,6 +10773,42 @@ p {
   bottom: 2px;
 }
 
+.card-img-top {
+  height: auto;
+  display: block;
+  border: 1px solid #f1f1f1;
+  transition-duration: 0.5s;
+}
+.card-img-top:hover {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card-title {
+  line-height: 1.2;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+.card-text {
+  color: #919191;
+  font-weight: 400;
+}
+.card-tags li {
+  gap: 10px;
+  text-wrap: nowrap;
+}
+.card-tags a {
+  border-radius: 16px;
+  padding: 4px 12px;
+  background-color: #f1f1f1;
+  transition-duration: 0.5s;
+}
+.card-tags a:hover {
+  cursor: no-vertical-text;
+  color: #f1f1f1;
+  background-color: #3b3b3b;
+}
+
 .navbar {
   background-color: #ffffffac;
   border-bottom: 1px solid #f1f1f1;
@@ -10840,6 +10876,10 @@ p {
 
 .product {
   gap: 80px;
+  padding: 120px 0 0;
+}
+.product img {
+  display: block;
 }
 .product-title {
   text-align: center;
@@ -10853,12 +10893,40 @@ p {
 .product-work2 {
   background-image: url(../img/homepage/homepage-work2-lg.png);
 }
+.product-work2-overlay {
+  background-color: #0a101380;
+  max-width: 50%;
+  height: inherit;
+  padding: 0 110px 0 24px;
+}
 .product-work3 {
   background-image: url(../img/homepage/homepage-work3-bg.png);
 }
 .product-full-intro {
-  max-width: 526px;
+  width: 526px;
   padding: 80px 40px 56px;
+  background-color: #ffffff1a;
+  backdrop-filter: blur(5px);
+}
+.product .card {
+  border-radius: 24px;
+  color: #fff;
+}
+.product .card-body {
+  border-bottom: 1px solid #f1f1f1;
+  padding-bottom: 40px;
+}
+.product .card-tags a {
+  background-color: #fff;
+}
+.product .card button {
+  width: fit-content;
+  padding: 16px 32px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 0 auto;
 }
 
 .slogan-banner {
@@ -10927,43 +10995,8 @@ p {
   margin: 120px auto 0;
   gap: 72px;
 }
-.portfolio .card-img-top {
-  height: auto;
-  display: block;
-  border: 1px solid #f1f1f1;
-  transition-duration: 0.5s;
-}
-.portfolio .card-img-top:hover {
-  border: none;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
 .portfolio .card-body {
   padding: 0 16px;
-}
-.portfolio .card-title {
-  line-height: 1.2;
-  font-size: 28px;
-  font-weight: 700;
-  margin: 0;
-}
-.portfolio .card-text {
-  color: #919191;
-  font-weight: 400;
-}
-.portfolio .card-tags li {
-  gap: 10px;
-  text-wrap: nowrap;
-}
-.portfolio .card-tags a {
-  border-radius: 16px;
-  padding: 4px 12px;
-  background-color: #f1f1f1;
-  transition-duration: 0.5s;
-}
-.portfolio .card-tags a:hover {
-  cursor: no-vertical-text;
-  color: #f1f1f1;
-  background-color: #3b3b3b;
 }
 
 .pagination {

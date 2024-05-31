@@ -40,6 +40,7 @@
       position: absolute;
     }
   }
+  
   p{
     margin: 0;
   }
@@ -84,46 +85,8 @@
   gap: 72px;
 
   .card{
-    &-img-top{
-      height: auto;
-      display: block;
-      border: 1px solid $second-color;
-      transition-duration: 0.5s;
-      &:hover{
-        border: none;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      }
-    }
     &-body{
       padding: 0 16px;
-    }
-    &-title{
-      line-height: 1.2;
-      font-size: 28px;
-      font-weight: 700;
-      margin: 0;
-    }
-    &-text{
-      color: $nine-one-color;
-      font-weight: 400;
-    }
-    &-tags{
-  
-      li{
-        gap: 10px;
-        text-wrap: nowrap;
-      } 
-      a{
-        border-radius: 16px;
-        padding: 4px 12px;
-        background-color: $second-color;
-        transition-duration: 0.5s;
-        &:hover{
-          cursor: no-vertical-text;
-          color: $second-color;
-          background-color: $fontcolor-primary;
-        }
-      }
     }
   }
 }
