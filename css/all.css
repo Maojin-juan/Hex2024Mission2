@@ -10740,6 +10740,18 @@ textarea.form-control-lg {
   gap: 40px;
 }
 
+.gap55 {
+  gap: 55px;
+}
+
+.z0 {
+  z-index: 0;
+}
+
+.z1 {
+  z-index: 1;
+}
+
 /*外框檢查*/
 body {
   font-family: "Noto Sans TC", "Noto Sans", sans-serif;
@@ -10754,6 +10766,10 @@ ul, ol {
 
 p {
   margin: 0;
+}
+
+button {
+  text-wrap: nowrap;
 }
 
 .underline {
@@ -10881,32 +10897,64 @@ p {
 .product img {
   display: block;
 }
+.product p {
+  color: #fff;
+}
+.product button {
+  padding: 16px 32px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  background-color: #000;
+  margin: 0 auto;
+}
 .product-title {
   text-align: center;
 }
 .product-bg {
   background-size: cover;
 }
-.product-work1 {
+.product-work-1 {
+  padding: 80px 0 0;
   background-image: url(../img/homepage/homepage-work1-bg.png);
 }
-.product-work2 {
+.product-work-1-overlay {
+  background-color: #27272780;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.product-work-2 {
   background-image: url(../img/homepage/homepage-work2-lg.png);
 }
-.product-work2-overlay {
+.product-work-2-overlay {
   background-color: #0a101380;
-  max-width: 50%;
+  width: 50%;
   height: inherit;
-  padding: 0 110px 0 24px;
+  padding-right: 110px;
 }
-.product-work3 {
+.product-work-3 {
   background-image: url(../img/homepage/homepage-work3-bg.png);
+}
+.product-work-3-overlay {
+  background-color: #0D0C0780;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.product-aesthetic {
+  padding: 176px 0 112px;
 }
 .product-full-intro {
   width: 526px;
   padding: 80px 40px 56px;
   background-color: #ffffff1a;
   backdrop-filter: blur(5px);
+  z-index: 2;
+}
+.product-full-intro-2 {
+  margin: 200px 0 200px auto;
 }
 .product .card {
   border-radius: 24px;
@@ -10914,19 +10962,15 @@ p {
 }
 .product .card-body {
   border-bottom: 1px solid #f1f1f1;
-  padding-bottom: 40px;
+  padding: 0 0 40px;
 }
 .product .card-tags a {
   background-color: #fff;
 }
-.product .card button {
-  width: fit-content;
-  padding: 16px 32px;
-  border-radius: 5px;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 30px;
-  margin: 0 auto;
+.product .card-tags a:hover {
+  cursor: no-vertical-text;
+  color: #f1f1f1;
+  background-color: #3b3b3b;
 }
 
 .slogan-banner {

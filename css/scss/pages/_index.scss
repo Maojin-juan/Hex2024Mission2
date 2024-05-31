@@ -45,33 +45,79 @@
     display: block;
   }
 
+  p{
+    color: $white;
+  }
+
+  button{
+    padding: 16px 32px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    background-color: $black;
+    margin: 0 auto;
+  }
+  
   &-title{
     text-align: center;
   }
+
   &-bg{
     background-size: cover;
   }
-  &-work1{
-    background-image: url(../img/homepage/homepage-work1-bg.png);
-  }
-  &-work2{
-    background-image: url(../img/homepage/homepage-work2-lg.png);
-    
-    &-overlay{
-      background-color: #0a101380;
-      max-width: 50%;
-      height: inherit;
-      padding: 0 110px 0 24px;
+
+  &-work{
+    &-1{
+      padding: 80px 0 0;
+      background-image: url(../img/homepage/homepage-work1-bg.png);
+
+      &-overlay{
+        background-color: #27272780;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-2{
+      background-image: url(../img/homepage/homepage-work2-lg.png);
+      
+      &-overlay{
+        background-color: #0a101380;
+        width: 50%;
+        height: inherit;
+        padding-right: 110px;
+      }
+    }
+
+    &-3{
+      background-image: url(../img/homepage/homepage-work3-bg.png);
+      
+      &-overlay{
+        background-color: #0D0C0780;
+        ;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
     }
   }
-  &-work3{
-    background-image: url(../img/homepage/homepage-work3-bg.png);
+  
+  &-aesthetic{
+    padding: 176px 0 112px;
   }
+
   &-full-intro{
     width: 526px;
     padding: 80px 40px 56px;
     background-color: #ffffff1a;
     backdrop-filter: blur(5px);
+    z-index: 2;
+
+    &-2{
+      margin: 200px 0 200px auto;
+    }
   }
 
   .card{
@@ -80,21 +126,19 @@
     
     &-body{
       border-bottom: 1px solid $second-color;
-      padding-bottom: 40px;
+      padding: 0 0 40px;
     }
 
-    &-tags a{
-      background-color: $white;
-    }
+    &-tags{
+      a{
+        background-color: $white;
 
-    button{
-      width: fit-content;
-      padding: 16px 32px;
-      border-radius: 5px;
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 30px;
-      margin: 0 auto;
+        &:hover{
+          cursor: no-vertical-text;
+          color: $second-color;
+          background-color: $fontcolor-primary;
+        }
+      }
     }
   }
 }

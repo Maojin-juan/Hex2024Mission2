@@ -58,69 +58,75 @@ html(lang="en")
 			.intro-hero-img
 				img(alt="hero-img")
 
-		main.product.d-flex.flex-column
+		section.product.d-flex.flex-column
 			h3.product-title.d-flex.justify-content-center.mb-0.gap-3 作品介紹
-			article.product-work1.product-bg.d-flex
-				.product-startravel
-					img(src="img/homepage/homepage-work1.png", alt="星際旅行平台")
-				.product-full-intro.full-intro1.card.gap40
-					.card-body.d-flex.flex-column.gap-4
-						h3.card-title.mb-0 星際旅行訂票平台
-						p.card-text 悠遊宇宙的夢想，從這裡開始實現
-						ul.card-tags.d-flex.flex-wrap.gap-3
-							li.list-unstyled 
-								a(href="#") 網頁設計
-							li.list-unstyled
-								a(href="#") 響應式設計
-							li.list-unstyled
-								a(href="#") Bootstrap
-					button.btn.btn-dark.d-flex.align-items-center.gap-2 完整介紹
-						img(src="img/logo_svg/arrow.svg", alt="full_intro")
+			main.product-main
+				article.product-work.product-work-1.product-bg.position-relative
+					.d-flex.justify-content-center.align-items-center.gap55
+						.product-startravel.z1
+							img(src="img/homepage/homepage-work1.png", alt="星際旅行平台")
+						.product-full-intro.full-intro1.card.gap40
+							.card-body.d-flex.flex-column.gap-4
+								h3.card-title.mb-0 星際旅行訂票平台
+								p.card-text 悠遊宇宙的夢想，從這裡開始實現
+								ul.card-tags.d-flex.flex-wrap.gap-3
+									li.list-unstyled 
+										a(href="#") 網頁設計
+									li.list-unstyled
+										a(href="#") 響應式設計
+									li.list-unstyled
+										a(href="#") Bootstrap
+							button.btn.btn-dark.d-flex.align-items-center.gap-2 完整介紹
+								img(src="img/logo_svg/arrow.svg", alt="full_intro")
+						.product-work-1-overlay.position-absolute.z0
 
-			article.product-work2.product-bg.d-flex
-				.product-work2-overlay.d-flex.justify-centent-end.align-items-center.position-relative
-					.product-full-intro.full-intro2.card.gap40
-						.card-body.d-flex.flex-column.gap-4
-							h3.card-title 星際旅行訂票平台
-							p.card-text 悠遊宇宙的夢想，從這裡開始實現
-							ul.card-tags.d-flex.flex-wrap.gap-3
-								li.list-unstyled 
-									a(href="#") 網頁設計
-								li.list-unstyled
-									a(href="#") 響應式設計
-								li.list-unstyled
-									a(href="#") Bootstrap
-						button.btn.btn-dark.d-flex.align-items-center.gap-2 完整介紹
-							img(src="img/logo_svg/arrow.svg", alt="full_intro")
+				article.product-work.product-work-2.product-bg
+					.d-flex.align-items-center.gap55
+						.product-work-2-overlay.d-flex.justify-centent-end.align-items-center.position-relative
+							.product-full-intro.product-full-intro-2.card.gap40
+								.card-body.d-flex.flex-column.gap-4
+									h3.card-title 星際旅行訂票平台
+									p.card-text 悠遊宇宙的夢想，從這裡開始實現
+									ul.card-tags.d-flex.flex-wrap.gap-3
+										li.list-unstyled 
+											a(href="#") 網頁設計
+										li.list-unstyled
+											a(href="#") 響應式設計
+										li.list-unstyled
+											a(href="#") Bootstrap
+								button.btn.btn-dark.d-flex.align-items-center.gap-2 完整介紹
+									img(src="img/logo_svg/arrow.svg", alt="full_intro")
 
-			article.product-work3.product-bg.d-flex
-				.product-aesthetic
-					img(src="img/homepage/homepage-work3.png", alt="醫美診所官網")
-				.product-full-intro.full-intro3.card.gap40
-					.card-body.d-flex.flex-column.gap-4
-						h3.card-title 星際旅行訂票平台
-						p.card-text 悠遊宇宙的夢想，從這裡開始實現
-						ul.card-tags.d-flex.flex-wrap.gap-3
-							li.list-unstyled 
-								a(href="#") 網頁設計
-							li.list-unstyled
-								a(href="#") 響應式設計
-							li.list-unstyled
-								a(href="#") Bootstrap
-					button.btn.btn-dark.d-flex.align-items-center.gap-2 完整介紹
-						img(src="img/logo_svg/arrow.svg", alt="full_intro")
+				article.product-work.product-work-3.product-bg.position-relative
+					.d-flex.justify-content-center.align-items-center.gap55
+						.product-aesthetic.z1
+							img(src="img/homepage/homepage-work3.png", alt="醫美診所官網")
+						.product-full-intro.full-intro3.card.gap40
+							.card-body.d-flex.flex-column.gap-4
+								h3.card-title 星際旅行訂票平台
+								p.card-text 悠遊宇宙的夢想，從這裡開始實現
+								ul.card-tags.d-flex.flex-wrap.gap-3
+									li.list-unstyled 
+										a(href="#") 網頁設計
+									li.list-unstyled
+										a(href="#") 響應式設計
+									li.list-unstyled
+										a(href="#") Bootstrap
+							button.btn.btn-dark.d-flex.align-items-center.gap-2 完整介紹
+								img(src="img/logo_svg/arrow.svg", alt="full_intro")
+						.product-work-3-overlay.position-absolute.z0
 
 		footer.footer
 			.container.d-flex.align-items-center.justify-content-between.gap40
-				.contact.row
+				.contact.d-flex.flex-column
 					//- 廢案保留span.circle.position-absolute
-					a.footer-link(href="#")
+					a.footer-link.fit-content(href="#")
 						img(src="img/logo_svg/logo.svg" alt="footer_logo")
-					p 若有數位產品設計和開發相關問題
+					p.fit-content 若有數位產品設計和開發相關問題
 						br
 						| 歡迎填寫表單，或直接與我聯絡！
-					
-					a.footer-link(href="mailto: service@hexschool.com" target="_blank") service@hexschool.com
+					a.footer-link.fit-content(href="mailto: service@hexschool.com" target="_blank") service@hexschool.com
+				
 				ul.sns.d-flex.flex-column
 					li
 						a.sns-enable.d-flex.align-items-center(href="#")
