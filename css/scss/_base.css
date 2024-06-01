@@ -19,18 +19,6 @@
   gap: 40px;
 }
 
-.gap55 {
-  gap: 55px;
-}
-
-.z0 {
-  z-index: 0;
-}
-
-.z1 {
-  z-index: 1;
-}
-
 /*外框檢查*/
 body {
   font-family: "Noto Sans TC", "Noto Sans", sans-serif;
@@ -45,8 +33,4 @@ ul, ol {
 
 p {
   margin: 0;
-}
-
-button {
-  text-wrap: nowrap;
 }
