@@ -10827,6 +10827,7 @@ button {
 
 .navbar {
   background-color: #ffffffac;
+  backdrop-filter: blur(5px);
   border-bottom: 1px solid #f1f1f1;
   padding: 32px 0;
 }
@@ -10915,6 +10916,9 @@ button {
 .product-bg {
   background-size: cover;
 }
+.product-work {
+  height: 800px;
+}
 .product-work-1 {
   padding: 80px 0 0;
   background-image: url(../img/homepage/homepage-work1-bg.png);
@@ -10943,6 +10947,10 @@ button {
   width: 100%;
   height: 100%;
 }
+.product-startravel {
+  max-width: 100%;
+  height: auto;
+}
 .product-aesthetic {
   padding: 176px 0 112px;
 }
@@ -10952,9 +10960,6 @@ button {
   background-color: #ffffff1a;
   backdrop-filter: blur(5px);
   z-index: 2;
-}
-.product-full-intro-2 {
-  margin: 200px 0 200px auto;
 }
 .product .card {
   border-radius: 24px;
@@ -11129,6 +11134,10 @@ button {
   }
   .intro p {
     justify-content: center;
+  }
+
+  .product-full-intro {
+    display: none;
   }
 }
 @media (max-width: 991.98px) {

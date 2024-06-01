@@ -12,6 +12,10 @@
   .intro p {
     justify-content: center;
   }
+
+  .product-full-intro {
+    display: none;
+  }
 }
 @media (max-width: 991.98px) {
   .exp-list {
