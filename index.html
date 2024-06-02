@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首頁 - 六角學院2024切版任務二</title>
+    <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/all.css">
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/slideshow.js"></script>
     <link rel="icon" type="image/png" size="16x16" href="img/icon/penguin-16.png">
     <link rel="icon" type="image/png" size="32x32" href="img/icon/penguin-32.png">
     <link rel="icon" href="img/icon/penguin-16.ico" type="image/x-icon">
@@ -44,13 +47,13 @@
       </div>
       <div class="intro-hero-img"><img alt="hero-img"></div>
     </section>
-    <section class="product d-flex flex-column">
+    <main class="product d-flex flex-column gap80">
       <h3 class="product-title d-flex justify-content-center mb-0 gap-3">作品介紹</h3>
-      <main class="product-main">
+      <section class="product-main">
         <article class="product-work-1 product-bg position-relative">
           <div class="product-work d-flex justify-content-center align-items-center gap55"><img class="product-startravel z1" src="img/homepage/homepage-work1.png" alt="星際旅行平台">
-            <div class="product-full-intro full-intro1 card gap40">
-              <div class="card-body d-flex flex-column gap-4">
+            <div class="product-full-intro full-intro-1 card gap40">
+              <div class="d-flex flex-column gap-4">
                 <h3 class="card-title mb-0">星際旅行訂票平台</h3>
                 <p class="card-text">悠遊宇宙的夢想，從這裡開始實現</p>
                 <ul class="card-tags d-flex flex-wrap gap-3">
@@ -64,11 +67,11 @@
             <div class="product-work-1-overlay position-absolute z0"></div>
           </div>
         </article>
-        <article class="product-work-2 product-bg">
+        <article class="product-work-2 product-bg position-relative">
           <div class="product-work d-flex align-items-center gap55">
-            <div class="product-work-2-overlay d-flex justify-centent-end align-items-center position-relative">
+            <div class="product-work-2-overlay position-absolute justify-centent-end">
               <div class="product-full-intro product-full-intro-2 card gap40">
-                <div class="card-body d-flex flex-column gap-4">
+                <div class="d-flex flex-column gap-4">
                   <h3 class="card-title">星際旅行訂票平台</h3>
                   <p class="card-text">悠遊宇宙的夢想，從這裡開始實現</p>
                   <ul class="card-tags d-flex flex-wrap gap-3">
@@ -83,10 +86,9 @@
           </div>
         </article>
         <article class="product-work-3 product-bg position-relative">
-          <div class="product-work d-flex justify-content-center align-items-center gap55">
-            <div class="product-aesthetic z1"><img src="img/homepage/homepage-work3.png" alt="醫美診所官網"></div>
-            <div class="product-full-intro full-intro3 card gap40">
-              <div class="card-body d-flex flex-column gap-4">
+          <div class="product-work d-flex justify-content-center align-items-center gap55"><img class="product-aesthetic z1" src="img/homepage/homepage-work3.png" alt="醫美診所官網">
+            <div class="product-full-intro full-intro-3 card gap40">
+              <div class="d-flex flex-column gap-4">
                 <h3 class="card-title">星際旅行訂票平台</h3>
                 <p class="card-text">悠遊宇宙的夢想，從這裡開始實現</p>
                 <ul class="card-tags d-flex flex-wrap gap-3">
@@ -100,8 +102,67 @@
             <div class="product-work-3-overlay position-absolute z0"></div>
           </div>
         </article>
-      </main>
+      </section>
+    </main>
+    <section class="service gap80 d-flex gap80">
+      <div class="service-content container d-flex flex-column align-items-center gap80">
+        <h2 class="service-title mb-0">服務項目</h2>
+        <ul class="service-item d-flex justify-content-center flex-wrap gap-4">
+          <li class="card service-item-gd justify-content-center align-items-center gap-4"><img src="img/logo_svg/service-item-visual.svg" alt="平面設計">
+            <h3 class="card-title">平面設計</h3>
+          </li>
+          <li class="card service-item-ui justify-content-center align-items-center gap-4"><img src="img/logo_svg/service-item-ui.svg" alt="UI設計">
+            <h3 class="card-title">UI 設計</h3>
+          </li>
+          <li class="card service-item-layout justify-content-center align-items-center gap-4"><img src="img/logo_svg/service-item-html&amp;css.svg" alt="切版服務">
+            <h3 class="card-title">切版服務</h3>
+          </li>
+          <li class="card service-item-f2e justify-content-center align-items-center gap-4"><img src="img/logo_svg/service-item-front-end.svg" alt="前端開發">
+            <h3 class="card-title">前端開發</h3>
+          </li>
+        </ul>
+        <div class="collaborate d-flex flex-column gap40">
+          <p class="mb-0">想要合作或瞭解更多？</p>
+          <button class="btn btn-dark d-flex align-items-center gap-2">詳細內容與合作流程<img src="img/logo_svg/arrow.svg" alt="collaborate"></button>
+        </div>
+      </div>
     </section>
+    <article class="selected-article container d-flex flex-column gap80">
+      <h2 class="selected-article-title swiper gap-3">精選文章</h2>
+      <ul class="selected-article-list swiper-wrapper d-flex justify-content-center gap40">
+        <li class="swiper-slide">
+          <div class="card"><img src="img/article/article-image1.png" alt="Vision Pro">
+            <p>Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</p>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="card"><img src="img/article/article-image1.png" alt="Vision Pro">
+            <p>Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</p>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="card"><img src="img/article/article-image1.png" alt="Vision Pro">
+            <p>Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</p>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="card"><img src="img/article/article-image1.png" alt="Vision Pro">
+            <p>Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</p>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="card"><img src="img/article/article-image1.png" alt="Vision Pro">
+            <p>Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</p>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="card"><img src="img/article/article-image1.png" alt="Vision Pro">
+            <p>Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</p>
+          </div>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </article>
     <footer class="footer">
       <div class="container d-flex align-items-center justify-content-between gap40">
         <div class="contact d-flex flex-column"><a class="footer-link fit-content" href="#"><img src="img/logo_svg/logo.svg" alt="footer_logo"></a>
@@ -114,5 +175,15 @@
         </ul>
       </div>
     </footer>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+      	slidesPerView: 3,
+      	spaceBetween: 30,
+      	pagination: {
+      		el: ".swiper-pagination",
+      		clickable: true,
+      	},
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,12 @@
+.service-item{
+  color: $white;
+
+  .card{
+    width: 306px;
+    height: 306px;
+    border-radius: 16px;
+    border: none;
+    padding: 20px 30px;
+    background: linear-gradient(to bottom right, #000 50%, #1e1e1e 0);
+  }
+}

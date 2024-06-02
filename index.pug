@@ -5,8 +5,11 @@ html(lang="en")
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		title 首頁 - 六角學院2024切版任務二
+		link(rel="stylesheet", href="css/swiper.css")
 		link(rel="stylesheet", href="css/all.css")
 		script(src="js/bootstrap.min.js")
+		script(src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js")
+		script(src="js/slideshow.js")
 		link(rel="icon" type="image/png" size="16x16" href="img/icon/penguin-16.png")
 		link(rel="icon" type="image/png" size="32x32" href="img/icon/penguin-32.png")
 		link(rel="icon" href="img/icon/penguin-16.ico" type="image/x-icon")
@@ -58,14 +61,14 @@ html(lang="en")
 			.intro-hero-img
 				img(alt="hero-img")
 
-		section.product.d-flex.flex-column
+		main.product.d-flex.flex-column.gap80
 			h3.product-title.d-flex.justify-content-center.mb-0.gap-3 作品介紹
-			main.product-main
+			section.product-main
 				article.product-work-1.product-bg.position-relative
 					.product-work.d-flex.justify-content-center.align-items-center.gap55
 						img.product-startravel.z1(src="img/homepage/homepage-work1.png", alt="星際旅行平台")
-						.product-full-intro.full-intro1.card.gap40
-							.card-body.d-flex.flex-column.gap-4
+						.product-full-intro.full-intro-1.card.gap40
+							.d-flex.flex-column.gap-4
 								h3.card-title.mb-0 星際旅行訂票平台
 								p.card-text 悠遊宇宙的夢想，從這裡開始實現
 								ul.card-tags.d-flex.flex-wrap.gap-3
@@ -79,11 +82,11 @@ html(lang="en")
 								img(src="img/logo_svg/arrow.svg", alt="full_intro")
 						.product-work-1-overlay.position-absolute.z0
 
-				article.product-work-2.product-bg
+				article.product-work-2.product-bg.position-relative
 					.product-work.d-flex.align-items-center.gap55
-						.product-work-2-overlay.d-flex.justify-centent-end.align-items-center.position-relative
+						.product-work-2-overlay.position-absolute.justify-centent-end
 							.product-full-intro.product-full-intro-2.card.gap40
-								.card-body.d-flex.flex-column.gap-4
+								.d-flex.flex-column.gap-4
 									h3.card-title 星際旅行訂票平台
 									p.card-text 悠遊宇宙的夢想，從這裡開始實現
 									ul.card-tags.d-flex.flex-wrap.gap-3
@@ -98,10 +101,9 @@ html(lang="en")
 
 				article.product-work-3.product-bg.position-relative
 					.product-work.d-flex.justify-content-center.align-items-center.gap55
-						.product-aesthetic.z1
-							img(src="img/homepage/homepage-work3.png", alt="醫美診所官網")
-						.product-full-intro.full-intro3.card.gap40
-							.card-body.d-flex.flex-column.gap-4
+						img.product-aesthetic.z1(src="img/homepage/homepage-work3.png", alt="醫美診所官網")
+						.product-full-intro.full-intro-3.card.gap40
+							.d-flex.flex-column.gap-4
 								h3.card-title 星際旅行訂票平台
 								p.card-text 悠遊宇宙的夢想，從這裡開始實現
 								ul.card-tags.d-flex.flex-wrap.gap-3
@@ -115,10 +117,59 @@ html(lang="en")
 								img(src="img/logo_svg/arrow.svg", alt="full_intro")
 						.product-work-3-overlay.position-absolute.z0
 
+		section.service.gap80.d-flex.gap80
+			.service-content.container.d-flex.flex-column.align-items-center.gap80
+				h2.service-title.mb-0 服務項目
+				ul.service-item.d-flex.justify-content-center.flex-wrap.gap-4
+					li.card.service-item-gd.justify-content-center.align-items-center.gap-4
+						img(src="img/logo_svg/service-item-visual.svg" alt="平面設計")
+						h3.card-title 平面設計
+					li.card.service-item-ui.justify-content-center.align-items-center.gap-4
+						img(src="img/logo_svg/service-item-ui.svg" alt="UI設計")
+						h3.card-title UI 設計
+					li.card.service-item-layout.justify-content-center.align-items-center.gap-4
+						img(src="img/logo_svg/service-item-html&css.svg" alt="切版服務")
+						h3.card-title 切版服務
+					li.card.service-item-f2e.justify-content-center.align-items-center.gap-4
+						img(src="img/logo_svg/service-item-front-end.svg" alt="前端開發")
+						h3.card-title 前端開發
+				.collaborate.d-flex.flex-column.gap40
+					p.mb-0 想要合作或瞭解更多？
+					button.btn.btn-dark.d-flex.align-items-center.gap-2 詳細內容與合作流程
+						img(src="img/logo_svg/arrow.svg", alt="collaborate")
+
+		article.selected-article.container.d-flex.flex-column.gap80
+			h2.selected-article-title.swiper.gap-3 精選文章
+			ul.selected-article-list.swiper-wrapper.d-flex.justify-content-center.gap40
+				li.swiper-slide
+					.card
+						img(src="img/article/article-image1.png", alt="Vision Pro")
+						p Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+				li.swiper-slide
+					.card
+						img(src="img/article/article-image1.png", alt="Vision Pro")
+						p Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+				li.swiper-slide
+					.card
+						img(src="img/article/article-image1.png", alt="Vision Pro")
+						p Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+				li.swiper-slide
+					.card
+						img(src="img/article/article-image1.png", alt="Vision Pro")
+						p Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+				li.swiper-slide
+					.card
+						img(src="img/article/article-image1.png", alt="Vision Pro")
+						p Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+				li.swiper-slide
+					.card
+						img(src="img/article/article-image1.png", alt="Vision Pro")
+						p Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+			.swiper-pagination
+
 		footer.footer
 			.container.d-flex.align-items-center.justify-content-between.gap40
 				.contact.d-flex.flex-column
-					//- 廢案保留span.circle.position-absolute
 					a.footer-link.fit-content(href="#")
 						img(src="img/logo_svg/logo.svg" alt="footer_logo")
 					p.fit-content 若有數位產品設計和開發相關問題
@@ -139,3 +190,13 @@ html(lang="en")
 						a.sns-disable.d-flex.align-items-center(href="#")
 							img(src="img/logo_svg/facebook.svg" alt="facebook")
 							| hexschoolTW
+
+		script.
+			var swiper = new Swiper(".mySwiper", {
+				slidesPerView: 3,
+				spaceBetween: 30,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+			});
