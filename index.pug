@@ -8,8 +8,7 @@ html(lang="en")
 		link(rel="stylesheet", href="css/swiper.css")
 		link(rel="stylesheet", href="css/all.css")
 		script(src="js/bootstrap.min.js")
-		script(src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js")
-		script(src="js/slideshow.js")
+		//- script(src="js/slideshow.js")
 		link(rel="icon" type="image/png" size="16x16" href="img/icon/penguin-16.png")
 		link(rel="icon" type="image/png" size="32x32" href="img/icon/penguin-32.png")
 		link(rel="icon" href="img/icon/penguin-16.ico" type="image/x-icon")
@@ -139,33 +138,34 @@ html(lang="en")
 						img(src="img/logo_svg/arrow.svg", alt="collaborate")
 
 		article.selected-article.container.d-flex.flex-column.gap80
-			h2.selected-article-title.swiper.gap-3 精選文章
-			ul.selected-article-list.swiper-wrapper.d-flex.justify-content-center.gap40
-				li.swiper-slide
-					.card
-						img(src="img/article/article-image1.png", alt="Vision Pro")
-						p Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
-				li.swiper-slide
-					.card
-						img(src="img/article/article-image1.png", alt="Vision Pro")
-						p Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
-				li.swiper-slide
-					.card
-						img(src="img/article/article-image1.png", alt="Vision Pro")
-						p Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
-				li.swiper-slide
-					.card
-						img(src="img/article/article-image1.png", alt="Vision Pro")
-						p Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
-				li.swiper-slide
-					.card
-						img(src="img/article/article-image1.png", alt="Vision Pro")
-						p Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
-				li.swiper-slide
-					.card
-						img(src="img/article/article-image1.png", alt="Vision Pro")
-						p Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
-			.swiper-pagination
+			h2.selected-article-title.gap-3 精選文章
+			.swiper
+				ul.selected-article-list.swiper-wrapper.d-flex.justify-content-center.gap40
+					li.swiper-slide
+						.card
+							img(src="img/article/article-image1.png", alt="Vision Pro")
+							p Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+					li.swiper-slide
+						.card
+							img(src="img/article/article-image1.png", alt="Vision Pro")
+							p Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+					li.swiper-slide
+						.card
+							img(src="img/article/article-image1.png", alt="Vision Pro")
+							p Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+					li.swiper-slide
+						.card
+							img(src="img/article/article-image1.png", alt="Vision Pro")
+							p Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+					li.swiper-slide
+						.card
+							img(src="img/article/article-image1.png", alt="Vision Pro")
+							p Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+					li.swiper-slide
+						.card
+							img(src="img/article/article-image1.png", alt="Vision Pro")
+							p Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+				.swiper-pagination
 
 		footer.footer
 			.container.d-flex.align-items-center.justify-content-between.gap40
@@ -190,13 +190,12 @@ html(lang="en")
 						a.sns-disable.d-flex.align-items-center(href="#")
 							img(src="img/logo_svg/facebook.svg" alt="facebook")
 							| hexschoolTW
-
-		script.
-			var swiper = new Swiper(".mySwiper", {
-				slidesPerView: 3,
-				spaceBetween: 30,
-				pagination: {
-					el: ".swiper-pagination",
-					clickable: true,
-				},
-			});
+	script.
+		var swiper = new Swiper(".mySwiper", {
+			slidesPerView: 3,
+			spaceBetween: 30,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+		});

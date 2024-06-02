@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/all.css">
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/slideshow.js"></script>
     <link rel="icon" type="image/png" size="16x16" href="img/icon/penguin-16.png">
     <link rel="icon" type="image/png" size="32x32" href="img/icon/penguin-32.png">
     <link rel="icon" href="img/icon/penguin-16.ico" type="image/x-icon">
@@ -128,40 +126,42 @@
       </div>
     </section>
     <article class="selected-article container d-flex flex-column gap80">
-      <h2 class="selected-article-title swiper gap-3">精選文章</h2>
-      <ul class="selected-article-list swiper-wrapper d-flex justify-content-center gap40">
-        <li class="swiper-slide">
-          <div class="card"><img src="img/article/article-image1.png" alt="Vision Pro">
-            <p>Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</p>
-          </div>
-        </li>
-        <li class="swiper-slide">
-          <div class="card"><img src="img/article/article-image1.png" alt="Vision Pro">
-            <p>Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</p>
-          </div>
-        </li>
-        <li class="swiper-slide">
-          <div class="card"><img src="img/article/article-image1.png" alt="Vision Pro">
-            <p>Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</p>
-          </div>
-        </li>
-        <li class="swiper-slide">
-          <div class="card"><img src="img/article/article-image1.png" alt="Vision Pro">
-            <p>Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</p>
-          </div>
-        </li>
-        <li class="swiper-slide">
-          <div class="card"><img src="img/article/article-image1.png" alt="Vision Pro">
-            <p>Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</p>
-          </div>
-        </li>
-        <li class="swiper-slide">
-          <div class="card"><img src="img/article/article-image1.png" alt="Vision Pro">
-            <p>Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</p>
-          </div>
-        </li>
-      </ul>
-      <div class="swiper-pagination"></div>
+      <h2 class="selected-article-title gap-3">精選文章</h2>
+      <div class="swiper">
+        <ul class="selected-article-list swiper-wrapper d-flex justify-content-center gap40">
+          <li class="swiper-slide">
+            <div class="card"><img src="img/article/article-image1.png" alt="Vision Pro">
+              <p>Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</p>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="card"><img src="img/article/article-image1.png" alt="Vision Pro">
+              <p>Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</p>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="card"><img src="img/article/article-image1.png" alt="Vision Pro">
+              <p>Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</p>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="card"><img src="img/article/article-image1.png" alt="Vision Pro">
+              <p>Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</p>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="card"><img src="img/article/article-image1.png" alt="Vision Pro">
+              <p>Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</p>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="card"><img src="img/article/article-image1.png" alt="Vision Pro">
+              <p>Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</p>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
     </article>
     <footer class="footer">
       <div class="container d-flex align-items-center justify-content-between gap40">
@@ -175,15 +175,15 @@
         </ul>
       </div>
     </footer>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-      	slidesPerView: 3,
-      	spaceBetween: 30,
-      	pagination: {
-      		el: ".swiper-pagination",
-      		clickable: true,
-      	},
-      });
-    </script>
   </body>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+    	slidesPerView: 3,
+    	spaceBetween: 30,
+    	pagination: {
+    		el: ".swiper-pagination",
+    		clickable: true,
+    	},
+    });
+  </script>
 </html>
