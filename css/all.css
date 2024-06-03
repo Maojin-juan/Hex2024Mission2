@@ -11087,43 +11087,6 @@ button {
   background-color: #000;
 }
 
-.selected-article {
-  padding: 120px 0;
-  transition: 0.5s;
-}
-.selected-article img {
-  width: 100%;
-  height: 100%;
-  max-height: 234px;
-  border: 1px solid #f1f1f1;
-  border-radius: 8px;
-}
-.selected-article p {
-  font-size: 20px;
-  font-weight: 700;
-}
-.selected-article-title {
-  text-align: center;
-}
-.selected-article .card {
-  border: none;
-}
-.selected-article .swiper-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: flex;
-}
-.selected-article .swiper-pagination {
-  position: absolute;
-  top: auto;
-  left: 0;
-  bottom: 8px;
-  width: 100%;
-  z-index: 2;
-}
-
 .slogan-banner {
   background: #fafafa;
   padding: 80px 0;
