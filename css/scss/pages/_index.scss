@@ -2,7 +2,6 @@
 
 .index-subtitle{
   margin: 0 auto;
-  width: 372px;
   margin-bottom: 0;
   font-size: 32px;
   display: flex;
@@ -10,48 +9,47 @@
   line-height: 38.4px;
   position: relative;
   font-weight: 600;
-}
 
-.index-subtitle::before{
-  content: "";
-  position: absolute;
-  width: 372px;
-  height: 1px;
-  background-color: $c-one-color;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  z-index: 0;
+  &:before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: $c-one-color;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    z-index: 0;
+  }
 }
 
 .title-text{
   padding: 0 16px;
   background: $white;
   z-index: 1;
-}
 
-.title-text::before{
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  background-color: $c-one-color;
-  border-radius: 50%;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  &:before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: $c-one-color;
+    border-radius: 50%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-.title-text::after{
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  background-color: $c-one-color;
-  border-radius: 50%;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  &:after{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: $c-one-color;
+    border-radius: 50%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 //-------------------------------intro-banner-------------------------------
@@ -75,9 +73,10 @@
 
   &-main{
     .underline-f2e::after{
-      background-size: 119px 8px;
       background-repeat: no-repeat;
-      left: -10px;
+      background-size: 100px 8px;
+      width: 100px;
+      left: 0;
     }
   }
 
