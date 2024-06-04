@@ -1,4 +1,4 @@
-@media (max-width: 1199.98px) {
+@media (max-width: 1199.98px){
   .intro-banner{
     flex-direction: column-reverse;
   }
@@ -16,17 +16,32 @@
   }
 
   .product{
-    &-full-intro{
-      display: none;
-    }
-    
+
     &-work-2-overlay{
       display: none;
+    }
+
+    &-fullintro{
+      display: none;
+    }
+
+    &-startravel{
+      //圖片置底
+      margin: 93px auto 0;
+    }
+
+    .transparent-block{
+      //圖片置底
+      margin: 93px auto 0;
+    }
+  
+    &-aesthetic{
+      margin: 90px auto;
     }
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 991.98px){
   .exp-list{
     flex-direction: column;
     gap: 20px;
@@ -34,7 +49,26 @@
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 767.98px){
+  .article-selected{
+    .swiper{
+      padding-bottom: 0;
+      margin-bottom: -8px;
+
+      &-slide{
+        margin-bottom: 48px;
+      }
+
+      &-slide:nth-child(n + 4){
+        display: none;
+      }
+
+      &-pagination{
+        display: none;
+      }
+    }
+  }
+
   .footer{
     background-image: url(../img/footer/footer-bg-sm.png);
 
@@ -46,28 +80,9 @@
       align-items: center;
     }
   }
-
-  .article-selected{
-    .swiper{
-      padding-bottom: 0;
-      margin-bottom: -8px;
-
-      &-slide{
-        margin-bottom: 48px;
-      }
-
-      &-slide:nth-child(n+4) {
-        display: none;
-      }
-
-      &-pagination {
-        display: none;
-      }
-    }
-  }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 575.98px){
   .intro-hero-img img{
     content: url(../img/hero/hero-sm.png)
   }
@@ -77,22 +92,55 @@
    gap: 20px;
    padding: 0 32px;
   }
+
+  .product-work-2{
+    background-image: url(../img/homepage/homepage-work2-sm.png);
+  }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 576px){
   .intro-hero-img img{
     content: url(../img/hero/hero-lg.png)
   }
+
+  .product-work-2{
+    background-image: url(../img/homepage/homepage-work2-lg.png);
+  }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px){
   .footer{
     background-image: url(../img/footer/footer-bg-lg.png);
   }
+
+  .article-selected-more{
+    display: none !important;
+  }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px){
   .intro{
     margin-left: auto;
   }
+
+  .product{  
+    &-fullintro-hide{
+      display: none !important;
+    }
+
+    &-startravel{
+      //圖片置底
+      margin-top: 80px;
+    }
+
+    .transparent-block{
+      //圖片置底
+      margin-top: 80px;
+    }
+  
+    &-aesthetic{
+      margin: 176px 0 112px;
+    }
+  }
+
 }

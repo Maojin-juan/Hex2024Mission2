@@ -101,7 +101,7 @@
     max-width: 100%;
   }
 
-  p{
+  .card-text-main{
     color: $white;
   }
 
@@ -119,12 +119,10 @@
     background-size: cover;
   }
 
-  &-work{
-    padding: 0 24px;
-
+  &-work{    
     &-1{
       background-image: url(../img/homepage/homepage-work1-bg.png);
-
+      
       &-overlay{
         background-color: #27272780;
         top: 0;
@@ -134,15 +132,16 @@
     }
 
     &-2{
-      height: 800px;
-      max-height: 100%;
-      background-image: url(../img/homepage/homepage-work2-lg.png);
+      .transparent-block{
+        opacity: 0;
+      }
 
       &-overlay{
         background-color: #0a101380;
         width: 50%;
+        top: 0;
         left: 0;
-        height: inherit;
+        height: 100%;
         padding: 0 110px 0 24px;
       }
     }
@@ -159,16 +158,7 @@
     }
   }
 
-  &-startravel{
-    //圖片置底
-    margin-top: auto;
-  }
-
-  &-aesthetic{
-    padding: 176px 0 112px;
-  }
-
-  &-full-intro{
+  &-fullintro{
     width: 100%;
     max-width: 526px;
     padding: 80px 40px 56px;
@@ -176,9 +166,20 @@
     backdrop-filter: blur(5px);
     z-index: 2;
 
-    &-2{
-      //第二張卡片上下間距
-      margin: 200px 0 200px auto;
+    &-hide{
+      color: $black !important;
+      border: none;
+      gap: 20px;
+      padding: 0 24px;
+      margin: 24px 0 48px 0;
+
+      h3{
+        text-align: center;
+      }
+
+      p{
+        text-align: center;
+      }
     }
   }
 
@@ -211,6 +212,10 @@
   font-weight: 600;
   padding: 120px 0 120px 0;
   background-image: url(../img/homepage/homepage-services-bg.png);
+
+  .title-text{
+    background: #fafafa;
+  }
 }
 
 .collaborate{
@@ -257,6 +262,7 @@
   .article-btn{
     padding: 8px 16px;
     border-radius: 5px;
+    background-color: $black;
   }
 }
 
@@ -267,10 +273,12 @@
 
   &-slide{
     display: flex;
+    margin-right: 0 !important;
   }
 
   &-pagination{
     display: flex;
+    justify-content: center;
     bottom: 0 !important;
   }
 
