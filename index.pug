@@ -9,7 +9,7 @@ html(lang="en")
 		link(rel="stylesheet", href="css/all.css")
 		script(src="js/bootstrap.min.js")
 		script(src="js/swiper.js")
-		script(src="js/slideshow.js")
+		script(defer src="js/slideshow.js")
 		link(rel="icon" type="image/png" size="16x16" href="img/icon/penguin-16.png")
 		link(rel="icon" type="image/png" size="32x32" href="img/icon/penguin-32.png")
 		link(rel="icon" href="img/icon/penguin-16.ico" type="image/x-icon")
@@ -19,7 +19,7 @@ html(lang="en")
 			.container.position-relative
 				h1.navbar-brand.mb-0.p-0
 					a(href="index.html")
-						img(src="img/logo_svg/logo.svg", alt="Logo")
+						img(src="img/logo_svg/logo.svg" alt="Logo")
 				button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
 					span.navbar-toggler-icon
 				#navbarNav.collapse.navbar-collapse.justify-content-center
@@ -51,13 +51,13 @@ html(lang="en")
 				ul.intro-link.d-flex.gap-3
 					li
 						a
-							img(src="img/logo_svg/instagram.svg", alt="instagram")
+							img(src="img/logo_svg/instagram.svg" alt="instagram")
 					li
 						a
-							img(src="img/logo_svg/facebook.svg", alt="facebook")
+							img(src="img/logo_svg/facebook.svg" alt="facebook")
 					li
 						a
-							img(src="img/logo_svg/youtube.svg", alt="youtube")
+							img(src="img/logo_svg/youtube.svg" alt="youtube")
 			.intro-hero-img
 				img(alt="hero-img")
 
@@ -66,7 +66,7 @@ html(lang="en")
 			section.product-main
 				article.product-work-1.product-bg.position-relative
 					.product-work.d-flex.justify-content-center.align-items-center.gap55
-						img.product-startravel.z1(src="img/homepage/homepage-work1.png", alt="星際旅行平台")
+						img.product-startravel.z1(src="img/homepage/homepage-work1.png" alt="星際旅行平台")
 						.product-full-intro.full-intro-1.card.gap40
 							.d-flex.flex-column.gap-4
 								h3.card-title.mb-0 星際旅行訂票平台
@@ -79,7 +79,7 @@ html(lang="en")
 									li.list-unstyled
 										a(href="#") Bootstrap
 							button.btn.btn-dark.d-flex.align-items-center.gap-2 完整介紹
-								img(src="img/logo_svg/arrow.svg", alt="full_intro")
+								img(src="img/logo_svg/arrow.svg" alt="full_intro")
 						.product-work-1-overlay.position-absolute.z0
 
 				article.product-work-2.product-bg.position-relative
@@ -97,11 +97,11 @@ html(lang="en")
 										li.list-unstyled
 											a(href="#") Bootstrap
 								button.btn.btn-dark.d-flex.align-items-center.gap-2 完整介紹
-									img(src="img/logo_svg/arrow.svg", alt="full_intro")
+									img(src="img/logo_svg/arrow.svg" alt="full_intro")
 
 				article.product-work-3.product-bg.position-relative
 					.product-work.d-flex.justify-content-center.align-items-center.gap55
-						img.product-aesthetic.z1(src="img/homepage/homepage-work3.png", alt="醫美診所官網")
+						img.product-aesthetic.z1(src="img/homepage/homepage-work3.png" alt="醫美診所官網")
 						.product-full-intro.full-intro-3.card.gap40
 							.d-flex.flex-column.gap-4
 								h3.card-title 星際旅行訂票平台
@@ -114,7 +114,7 @@ html(lang="en")
 									li.list-unstyled
 										a(href="#") Bootstrap
 							button.btn.btn-dark.d-flex.align-items-center.gap-2 完整介紹
-								img(src="img/logo_svg/arrow.svg", alt="full_intro")
+								img(src="img/logo_svg/arrow.svg" alt="full_intro")
 						.product-work-3-overlay.position-absolute.z0
 
 		section.service.gap80.d-flex.gap80
@@ -136,41 +136,30 @@ html(lang="en")
 				.collaborate.d-flex.flex-column.gap40
 					p.mb-0 想要合作或瞭解更多？
 					button.btn.btn-dark.d-flex.align-items-center.gap-2 詳細內容與合作流程
-						img(src="img/logo_svg/arrow.svg", alt="collaborate")
+						img(src="img/logo_svg/arrow.svg" alt="collaborate")
 
-		article.selected-article.container
+		article.article-selected.container
+			h2.article-title 精選文章
 			.swiper
-				.swiper-wrapper
-					.swiper-slide
-						.card
-							img(src="img/article/article-image1.png", alt="")
-							h3 1
-							p content 1
-					.swiper-slide
-						.card
-							img(src="img/article/article-image1.png", alt="")
-							h3 2
-							p content 2
-					.swiper-slide
-						.card
-							img(src="img/article/article-image1.png", alt="")
-							h3 3
-							p content 3
-					.swiper-slide
-						.card
-							img(src="img/article/article-image1.png", alt="")
-							h3 4
-							p content 4
-					.swiper-slide
-						.card
-							img(src="img/article/article-image1.png", alt="")
-							h3 5
-							p content 5
-					.swiper-slide
-						.card
-							img(src="img/article/article-image1.png", alt="")
-							h3 6
-							p content 6
+				ul.swiper-wrapper
+					li.swiper-slide
+						img(src="img/article/article-image1.png" alt="Vision Pro")
+						p Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+						.card-tags
+							a(href="#") UI/UX新知
+							span 2024/02/10
+					li.swiper-slide
+						img(src="img/article/article-image2.png" alt="Figma-Dev Mode上")
+						p 給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)
+						.card-tags
+							a(href="#") UI/UX新知
+							span 2023/11/20
+					li.swiper-slide
+						img(src="img/article/article-image3.png" alt="Figma-Dev Mode下")
+						p 給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)
+						.card-tags
+							a(href="#") UI/UX新知
+							span 2023/10/18
 				.swiper-pagination
 
 		footer.footer

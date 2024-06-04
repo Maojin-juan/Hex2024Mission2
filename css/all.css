@@ -11087,6 +11087,25 @@ button {
   background-color: #000;
 }
 
+.article-selected {
+  transition: 0.5s;
+  margin: 0 auto;
+}
+.article-selected img {
+  width: 416px;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+}
+.article-selected p {
+  font-size: 20px;
+  font-weight: 700;
+}
+.article-selected-title {
+  text-align: center;
+}
+
 .slogan-banner {
   background: #fafafa;
   padding: 80px 0;
