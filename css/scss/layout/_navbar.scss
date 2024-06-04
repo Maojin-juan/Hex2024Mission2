@@ -30,6 +30,14 @@
     font-size: 0; /*logo定位後精準把h1垂直置中的重要功臣*/
   }
 
+  &-collapse{
+    justify-content: center;
+  }
+
+  &-nav{
+    align-items: center;
+  }
+
   &-toggler{
     padding: 1px;
     margin-left: auto;

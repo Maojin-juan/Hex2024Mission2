@@ -10814,6 +10814,7 @@ button {
   font-weight: 400;
 }
 .card-tags li {
+  display: flex;
   gap: 10px;
   text-wrap: nowrap;
 }
@@ -10880,6 +10881,20 @@ button {
   .footer .contact {
     align-items: center;
   }
+
+  .article-selected .swiper {
+    padding-bottom: 0;
+    margin-bottom: -8px;
+  }
+  .article-selected .swiper-slide {
+    margin-bottom: 48px;
+  }
+  .article-selected .swiper-slide:nth-child(n+4) {
+    display: none;
+  }
+  .article-selected .swiper-pagination {
+    display: none;
+  }
 }
 @media (max-width: 575.98px) {
   .intro-hero-img img {
@@ -10929,6 +10944,12 @@ button {
   font-size: 0;
   /*logo定位後精準把h1垂直置中的重要功臣*/
 }
+.navbar-collapse {
+  justify-content: center;
+}
+.navbar-nav {
+  align-items: center;
+}
 .navbar-toggler {
   padding: 1px;
   margin-left: auto;
@@ -10945,6 +10966,60 @@ button {
   background-size: 8px 8px;
 }
 
+.index-subtitle {
+  margin: 0 auto;
+  width: 372px;
+  margin-bottom: 0;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  line-height: 38.4px;
+  position: relative;
+  font-weight: 600;
+}
+
+.index-subtitle::before {
+  content: "";
+  position: absolute;
+  width: 372px;
+  height: 1px;
+  background-color: #c1c1c1;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  z-index: 0;
+}
+
+.title-text {
+  padding: 0 16px;
+  background: #fff;
+  z-index: 1;
+}
+
+.title-text::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #c1c1c1;
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.title-text::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #c1c1c1;
+  border-radius: 50%;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .intro-banner {
   margin: 0 auto;
 }
@@ -10952,7 +11027,7 @@ button {
 .intro {
   gap: 60px;
 }
-.intro h3, .intro .h3 {
+.intro h2, .intro .h2 {
   font-size: 40px;
   font-weight: 600;
 }
@@ -10992,14 +11067,10 @@ button {
   background-color: #000;
   margin: 0 auto;
 }
-.product-title {
-  text-align: center;
-}
 .product-bg {
   background-size: cover;
 }
 .product-work {
-  height: 800px;
   padding: 0 24px;
 }
 .product-work-1 {
@@ -11012,6 +11083,8 @@ button {
   height: 100%;
 }
 .product-work-2 {
+  height: 800px;
+  max-height: 100%;
   background-image: url(../img/homepage/homepage-work2-lg.png);
 }
 .product-work-2-overlay {
@@ -11069,10 +11142,6 @@ button {
   padding: 120px 0 120px 0;
   background-image: url(../img/homepage/homepage-services-bg.png);
 }
-.service-title {
-  font-size: 32px;
-  line-height: 38.4px;
-}
 
 .collaborate p {
   font-size: 28px;
@@ -11089,21 +11158,46 @@ button {
 
 .article-selected {
   transition: 0.5s;
+  padding: 80px 0;
   margin: 0 auto;
 }
-.article-selected img {
+.article-selected .selected {
   width: 416px;
   max-width: 100%;
   height: auto;
   border: 1px solid #f1f1f1;
   border-radius: 8px;
+  margin: 0 auto;
 }
 .article-selected p {
   font-size: 20px;
   font-weight: 700;
 }
-.article-selected-title {
-  text-align: center;
+.article-selected h3, .article-selected .h3 {
+  margin-bottom: 80px;
+}
+.article-selected .article-btn {
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.swiper-wrapper {
+  padding-bottom: 52px;
+}
+.swiper-slide {
+  display: flex;
+}
+.swiper-pagination {
+  display: flex;
+  bottom: 0 !important;
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin: 0 8px !important;
+}
+.swiper-pagination-bullet-active {
+  background: #000;
 }
 
 .slogan-banner {
@@ -11203,7 +11297,6 @@ button {
 }
 
 .footer {
-  background-image: url(img/logo_svg/logo.svg);
   background-size: cover;
 }
 .footer-link {
