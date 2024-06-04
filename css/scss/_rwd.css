@@ -37,6 +37,14 @@
   }
 }
 @media (max-width: 767.98px) {
+  .slogan-quote-l {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .slogan-quote-r {
+    display: none;
+  }
+
   .article-selected .swiper {
     padding-bottom: 0;
     margin-bottom: -8px;
@@ -86,12 +94,16 @@
   }
 }
 @media (min-width: 768px) {
-  .footer {
-    background-image: url(../img/footer/footer-bg-lg.png);
+  .slogan-quote-l {
+    left: 0;
   }
 
   .article-selected-more {
     display: none !important;
+  }
+
+  .footer {
+    background-image: url(../img/footer/footer-bg-lg.png);
   }
 }
 @media (min-width: 1200px) {

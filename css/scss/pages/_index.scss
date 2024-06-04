@@ -162,44 +162,39 @@
     width: 100%;
     max-width: 526px;
     padding: 80px 40px 56px;
+    border-radius: 24px;
+    color: $white;
     background-color: #ffffff1a;
     backdrop-filter: blur(5px);
     z-index: 2;
+    
+    a{
+      background-color: $white;
+    }
 
     &-hide{
-      color: $black !important;
       border: none;
       gap: 20px;
       padding: 0 24px;
       margin: 24px 0 48px 0;
 
       h3{
+        color: $black;
         text-align: center;
       }
 
       p{
+        color: $five-b-color;
         text-align: center;
       }
-    }
-  }
-
-  .card{
-    border-radius: 24px;
-    color: $white;
-    
-    &-body{
-      border-bottom: 1px solid $second-color;
-      padding: 0 0 40px;
-    }
-
-    &-tags{
-      a{
-        background-color: $white;
-
-        &:hover{
-          cursor: no-vertical-text;
-          color: $second-color;
-          background-color: $fontcolor-primary;
+      .card-tags{
+        a{
+          background-color: $second-color;
+  
+          &:hover{
+            color: $second-color;
+            background-color: $fontcolor-primary;
+          }
         }
       }
     }
