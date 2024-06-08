@@ -11087,7 +11087,7 @@ button {
 }
 
 .intro-banner {
-  margin: 0 auto;
+  margin: 97px auto 0;
 }
 
 .intro {
@@ -11271,6 +11271,7 @@ button {
 }
 
 .slogan-banner {
+  margin-top: 97px;
   background: #fafafa;
   padding: 80px 0;
 }
